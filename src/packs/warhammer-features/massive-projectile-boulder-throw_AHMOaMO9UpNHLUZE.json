@@ -64,6 +64,7 @@
   },
   "effects": [
     {
+      "_id": "746b1d0c6748b6dc",
       "name": "Prone on Failed Save",
       "img": "icons/magic/earth/projectile-stone-landslide.webp",
       "disabled": false,

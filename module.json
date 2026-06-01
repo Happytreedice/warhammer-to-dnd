@@ -294,31 +294,53 @@
             "name": "Warhammer Conversions",
             "sorting": "a",
             "color": "#651414",
-            "packs": [
-                "beastmen-brayherds-actors",
-                "chaos-dwarfs-actors",
-                "conversion-journals",
-                "daemons-of-chaos-actors",
-                "dark-elf-actors",
-                "dwarfen-mountain-holds-actors",
-                "empire-of-man-actors",
-                "high-elf-realms-actors",
-                "khemri-actors",
-                "kingdom-of-bretonnia-actors",
-                "lizardmen-actors",
-                "ogre-kingdoms-actors",
-                "orc-and-goblin-tribes-actors",
-                "skaven-actors",
-                "vampire-counts-actors",
-                "vyrkos-dynasty-actors",
-                "warhammer-equipment",
-                "warhammer-features",
-                "warhammer-spells",
-                "warhammer-weapons",
-                "warriors-of-chaos-actors",
-                "warriors-of-chaos-khorne-actors",
-                "warriors-of-chaos-tzeentch-actors",
-                "wood-elf-realms-actors"
+            "packs": [],
+            "folders": [
+                {
+                    "name": "Faction Actors",
+                    "sorting": "a",
+                    "color": "#8a1f1f",
+                    "packs": [
+                        "beastmen-brayherds-actors",
+                        "chaos-dwarfs-actors",
+                        "daemons-of-chaos-actors",
+                        "dark-elf-actors",
+                        "dwarfen-mountain-holds-actors",
+                        "empire-of-man-actors",
+                        "high-elf-realms-actors",
+                        "khemri-actors",
+                        "kingdom-of-bretonnia-actors",
+                        "lizardmen-actors",
+                        "ogre-kingdoms-actors",
+                        "orc-and-goblin-tribes-actors",
+                        "skaven-actors",
+                        "vampire-counts-actors",
+                        "vyrkos-dynasty-actors",
+                        "warriors-of-chaos-actors",
+                        "warriors-of-chaos-khorne-actors",
+                        "warriors-of-chaos-tzeentch-actors",
+                        "wood-elf-realms-actors"
+                    ]
+                },
+                {
+                    "name": "Universal Item Libraries",
+                    "sorting": "a",
+                    "color": "#4f6f52",
+                    "packs": [
+                        "warhammer-equipment",
+                        "warhammer-features",
+                        "warhammer-spells",
+                        "warhammer-weapons"
+                    ]
+                },
+                {
+                    "name": "Conversion Journals",
+                    "sorting": "a",
+                    "color": "#6d5b2f",
+                    "packs": [
+                        "conversion-journals"
+                    ]
+                }
             ]
         }
     ],
@@ -337,5 +359,8 @@
     "name": "warhammer-to-dnd",
     "url": "https://github.com/Happytreedice/warhammer-to-dnd",
     "manifest": "https://github.com/Happytreedice/warhammer-to-dnd/releases/latest/download/module.json",
-    "download": "https://github.com/Happytreedice/warhammer-to-dnd/releases/download/v1.0.4/warhammer-to-dnd.zip"
+    "download": "https://github.com/Happytreedice/warhammer-to-dnd/releases/download/v1.0.4/warhammer-to-dnd.zip",
+    "esmodules": [
+        "scripts/module.js"
+    ]
 }

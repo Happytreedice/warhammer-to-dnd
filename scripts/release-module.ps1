@@ -13,6 +13,27 @@ param(
 
 $ErrorActionPreference = "Stop"
 $Utf8NoBomStrict = [System.Text.UTF8Encoding]::new($false, $true)
+$OutputEncoding = $Utf8NoBomStrict
+try {
+  [Console]::InputEncoding = $Utf8NoBomStrict
+  [Console]::OutputEncoding = $Utf8NoBomStrict
+} catch {
+  # Non-interactive hosts may not expose console encoding controls.
+}
+$EmbeddedCollections = @{
+  actors = @("items", "effects")
+  cards = @("cards")
+  combats = @("combatants", "groups")
+  delta = @("items", "effects")
+  effects = @()
+  items = @("effects")
+  journal = @("pages", "categories")
+  playlists = @("sounds")
+  regions = @("behaviors")
+  tables = @("results")
+  tokens = @("delta")
+  scenes = @("drawings", "lights", "notes", "regions", "sounds", "templates", "tokens", "tiles", "walls")
+}
 
 function Resolve-FullPath {
   param([string] $Path)
@@ -66,6 +87,19 @@ function Add-OrSetJsonProperty {
   }
 }
 
+function New-DeterministicId {
+  param([string] $Seed)
+
+  $sha1 = [System.Security.Cryptography.SHA1]::Create()
+  try {
+    $bytes = [System.Text.Encoding]::UTF8.GetBytes($Seed)
+    $hash = $sha1.ComputeHash($bytes)
+    return (($hash | ForEach-Object { $_.ToString("x2") }) -join "").Substring(0, 16)
+  } finally {
+    $sha1.Dispose()
+  }
+}
+
 function Get-NextPatchVersion {
   param([string] $Version)
 
@@ -77,6 +111,114 @@ function Get-NextPatchVersion {
   $minor = [int] $Matches[2]
   $patch = [int] $Matches[3] + 1
   return "$major.$minor.$patch"
+}
+
+function Get-DocumentCollection {
+  param([string] $DocumentType)
+
+  $collections = @{
+    ActiveEffect = "effects"
+    Actor = "actors"
+    Adventure = "adventures"
+    Cards = "cards"
+    ChatMessage = "messages"
+    Combat = "combats"
+    FogExploration = "fog"
+    Folder = "folders"
+    Item = "items"
+    JournalEntry = "journal"
+    Macro = "macros"
+    Playlist = "playlists"
+    RollTable = "tables"
+    Scene = "scenes"
+    Setting = "settings"
+    User = "users"
+  }
+
+  if (-not $collections.ContainsKey($DocumentType)) {
+    throw "Unsupported compendium document type: $DocumentType"
+  }
+
+  return $collections[$DocumentType]
+}
+
+function Add-DocumentKeys {
+  param(
+    [object] $Document,
+    [string] $Collection,
+    [string] $CollectionPrefix = $Collection,
+    [string] $IdPrefix = $Document._id
+  )
+
+  if ([string]::IsNullOrWhiteSpace($Document._id)) {
+    throw "Missing _id while assigning a $Collection key."
+  }
+
+  Add-OrSetJsonProperty -Object $Document -Name "_key" -Value "!$CollectionPrefix!$IdPrefix"
+
+  if (-not $script:EmbeddedCollections.ContainsKey($Collection)) {
+    return
+  }
+
+  foreach ($embeddedCollection in $script:EmbeddedCollections[$Collection]) {
+    $embeddedValue = $Document.$embeddedCollection
+    if ($null -eq $embeddedValue) {
+      continue
+    }
+
+    if ($embeddedValue -is [System.Array]) {
+      for ($index = 0; $index -lt $embeddedValue.Count; $index++) {
+        $embeddedDocument = $embeddedValue[$index]
+        if ($null -eq $embeddedDocument) {
+          continue
+        }
+
+        if ([string]::IsNullOrWhiteSpace($embeddedDocument._id)) {
+          $label = ""
+          if ($embeddedDocument.PSObject.Properties.Name -contains "name") {
+            $label = [string] $embeddedDocument.name
+          } elseif ($embeddedDocument.PSObject.Properties.Name -contains "label") {
+            $label = [string] $embeddedDocument.label
+          } elseif ($embeddedDocument.PSObject.Properties.Name -contains "type") {
+            $label = [string] $embeddedDocument.type
+          }
+
+          Add-OrSetJsonProperty `
+            -Object $embeddedDocument `
+            -Name "_id" `
+            -Value (New-DeterministicId -Seed "${IdPrefix}:${embeddedCollection}:${index}:${label}")
+        }
+
+        Add-DocumentKeys `
+          -Document $embeddedDocument `
+          -Collection $embeddedCollection `
+          -CollectionPrefix "$CollectionPrefix.$embeddedCollection" `
+          -IdPrefix "$IdPrefix.$($embeddedDocument._id)"
+      }
+    } elseif ($null -ne $embeddedValue) {
+      if ([string]::IsNullOrWhiteSpace($embeddedValue._id)) {
+        $label = ""
+        if ($embeddedValue.PSObject.Properties.Name -contains "name") {
+          $label = [string] $embeddedValue.name
+        } elseif ($embeddedValue.PSObject.Properties.Name -contains "label") {
+          $label = [string] $embeddedValue.label
+        } elseif ($embeddedValue.PSObject.Properties.Name -contains "type") {
+          $label = [string] $embeddedValue.type
+        }
+
+        Add-OrSetJsonProperty `
+          -Object $embeddedValue `
+          -Name "_id" `
+          -Value (New-DeterministicId -Seed "${IdPrefix}:${embeddedCollection}:0:${label}")
+      }
+
+      Add-DocumentKeys `
+        -Document $embeddedValue `
+        -Collection $embeddedCollection `
+        -CollectionPrefix "$CollectionPrefix.$embeddedCollection" `
+        -IdPrefix "$IdPrefix.$($embeddedValue._id)"
+    }
+  }
 }
 
 function Get-GitHubRepositoryFromRemote {
@@ -176,6 +318,7 @@ function Build-CompendiumPacks {
   $sourcePacksRoot = Join-Path $ModuleRoot "src/packs"
   $packRoot = Join-Path $ModuleRoot "packs"
   $packBuildRoot = Join-Path $ModuleRoot "dist/pack-build"
+  $packSourceRoot = Join-Path $ModuleRoot "dist/pack-source"
 
   if (-not (Test-Path $sourcePacksRoot -PathType Container)) {
     throw "Source packs directory was not found: $sourcePacksRoot"
@@ -183,11 +326,16 @@ function Build-CompendiumPacks {
 
   Assert-ChildPath -BasePath $ModuleRoot -TargetPath $packRoot
   Assert-ChildPath -BasePath $ModuleRoot -TargetPath $packBuildRoot
+  Assert-ChildPath -BasePath $ModuleRoot -TargetPath $packSourceRoot
 
   if (Test-Path $packBuildRoot) {
     Remove-Item -LiteralPath $packBuildRoot -Recurse -Force
   }
+  if (Test-Path $packSourceRoot) {
+    Remove-Item -LiteralPath $packSourceRoot -Recurse -Force
+  }
   New-Item -ItemType Directory -Force -Path $packBuildRoot | Out-Null
+  New-Item -ItemType Directory -Force -Path $packSourceRoot | Out-Null
 
   foreach ($pack in $Manifest.packs) {
     $packName = $pack.name
@@ -201,12 +349,29 @@ function Build-CompendiumPacks {
     }
 
     $sourcePath = Join-Path $sourcePacksRoot $packName
+    $stagedSourcePath = Join-Path $packSourceRoot $packName
     $outputPath = Join-Path $packBuildRoot $packName
     Assert-ChildPath -BasePath $sourcePacksRoot -TargetPath $sourcePath
+    Assert-ChildPath -BasePath $packSourceRoot -TargetPath $stagedSourcePath
     Assert-ChildPath -BasePath $packBuildRoot -TargetPath $outputPath
 
     if (-not (Test-Path $sourcePath -PathType Container)) {
       throw "Missing source directory for pack '$packName': $sourcePath"
+    }
+
+    $collection = Get-DocumentCollection -DocumentType $pack.type
+    $sourcePathPrefix = [System.IO.Path]::GetFullPath($sourcePath).TrimEnd([System.IO.Path]::DirectorySeparatorChar, [System.IO.Path]::AltDirectorySeparatorChar) + [System.IO.Path]::DirectorySeparatorChar
+    foreach ($sourceFile in Get-ChildItem -LiteralPath $sourcePath -Recurse -Filter "*.json" -File) {
+      $relativePath = [System.IO.Path]::GetFullPath($sourceFile.FullName).Substring($sourcePathPrefix.Length)
+      $stagedFile = Join-Path $stagedSourcePath $relativePath
+      New-Item -ItemType Directory -Force -Path (Split-Path $stagedFile -Parent) | Out-Null
+
+      $document = Read-JsonFile -Path $sourceFile.FullName
+      if ([string]::IsNullOrWhiteSpace($document._id)) {
+        throw "Missing _id in $($sourceFile.FullName)"
+      }
+      Add-DocumentKeys -Document $document -Collection $collection
+      Write-JsonFile -Path $stagedFile -Value $document
     }
 
     Write-Host "Packing $packName"
@@ -215,17 +380,23 @@ function Build-CompendiumPacks {
       "pack",
       $packName,
       "--inputDirectory",
-      $sourcePath,
+      $stagedSourcePath,
       "--outputDirectory",
       $packBuildRoot,
       "--recursive"
     )
+
+    $levelDbFiles = @(Get-ChildItem -LiteralPath $outputPath -Filter "*.ldb" -File -ErrorAction SilentlyContinue | Where-Object { $_.Length -gt 0 })
+    if ($levelDbFiles.Count -eq 0) {
+      throw "Pack '$packName' was created without LevelDB data. Check staged _key values."
+    }
   }
 
   if (Test-Path $packRoot) {
     Remove-Item -LiteralPath $packRoot -Recurse -Force
   }
   Move-Item -LiteralPath $packBuildRoot -Destination $packRoot
+  Remove-Item -LiteralPath $packSourceRoot -Recurse -Force
 }
 
 function Copy-RuntimeEntry {
