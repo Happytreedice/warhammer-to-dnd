@@ -1,0 +1,179 @@
+{
+  "_id": "FIJiw8DMyQaXWtJ6",
+  "name": "Beasts of Nurgle",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 108,
+        "max": 108,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "108"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 3,
+      "spellcasting": "",
+      "spelldc": 10
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Beasts of Nurgle.</strong> This warrior of Daemons of Chaos enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The veil is thin, and hunger has learned to speak.”<br><em>— Be’lakor</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Daemon Claws, Hellblade, Warpflame Bolt, Ethereal Claws, Warp Talons, Pestilent Contagion Aura, Dark Favor, Daemonic Instability, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 5.0,
+      "xp": {
+        "value": 2250
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "fiend",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Daemons of Chaos"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Beasts of Nurgle.</strong> Beasts of Nurgle enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The north wind does not bargain.”<br><em>— a warlord of Chaos</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Beasts of Nurgle",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ZHssN27HnEJDMKkA",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MQt0yDSAPea0cvnD",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.WWgHkZ0WfW0yjkza",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.UGoIVr7NeUMwZnJs",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ugcezLN8U2IAXNZS",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.rDq6vqEBjBEekxEE",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.C5kVzxbRivSet5tb",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+      ],
+      "itemCount": 10,
+      "zeroEmbedding": true,
+      "sourceFaction": "daemons-of-chaos"
+    }
+  },
+  "_stats": {}
+}

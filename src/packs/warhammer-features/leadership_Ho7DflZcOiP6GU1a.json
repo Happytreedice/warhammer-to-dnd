@@ -1,0 +1,67 @@
+{
+  "_id": "Ho7DflZcOiP6GU1a",
+  "name": "Leadership",
+  "type": "feat",
+  "img": "icons/magic/control/buff-strength-muscle-damage-orange.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Leadership.</strong> All allied creatures of the leader’s choice within 30 feet that can hear or see it have advantage on saving throws against being frightened and on checks or saves made to resist Intimidation. The aura ends for an ally that cannot perceive the leader.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": 30,
+      "width": null,
+      "units": "ft",
+      "type": "ally"
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "self"
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": []
+    },
+    "ability": "cha",
+    "actionType": "other",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "save": {
+      "ability": "cha",
+      "dc": "8 + @prof + @abilities.cha.mod",
+      "scaling": "flat"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "(@details.level + @details.cr)",
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {}
+}

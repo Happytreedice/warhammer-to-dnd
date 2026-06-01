@@ -1,0 +1,14 @@
+Готово. Я подготовил 5 отдельных `.md` файлов и общий архив.
+
+За основу взял текущую структуру армий The Old World: Dwarfen Mountain Holds, Chaos Dwarfs, Lizardmen Legacy Army List и Warriors of Chaos; Tzeentch/Khorne оформлены как тематические армии на базе Warriors of Chaos и правил Marks of Chaos. ([tow.whfb.app](https://tow.whfb.app/warhammer-armies/dwarfen-mountain-holds-army-list))  
+Формат выдержан по принципам проекта: не прямой перенос чисел, а перевод в D&D 5e через CR, роли, перезарядки, армейские особенности и структуру для FoundryVTT. Такой подход уже использовался в предыдущей конверсии Vampire Counts и каталоге способностей с перезарядкой. fileciteturn1file0 fileciteturn1file1
+
+### Файлы для скачивания
+
+1. [Chaos Dwarfs / Гномы Хаоса](sandbox:/mnt/data/warhammer_tow_chaos_dwarfs_dnd5e_conversion.md)  
+2. [Dwarfen Mountain Holds / Горные дварфы](sandbox:/mnt/data/warhammer_tow_dwarfen_mountain_holds_dnd5e_conversion.md)  
+3. [Lizardmen / Ящеролюды Люстрии](sandbox:/mnt/data/warhammer_tow_lizardmen_dnd5e_conversion.md)  
+4. [Warriors of Chaos — Tzeentch](sandbox:/mnt/data/warhammer_tow_warriors_of_chaos_tzeentch_dnd5e_conversion.md)  
+5. [Warriors of Chaos — Khorne](sandbox:/mnt/data/warhammer_tow_warriors_of_chaos_khorne_dnd5e_conversion.md)  
+
+Общий архив: [warhammer_tow_5_armies_dnd5e_md.zip](sandbox:/mnt/data/warhammer_tow_5_armies_dnd5e_md.zip)

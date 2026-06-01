@@ -1,0 +1,186 @@
+{
+  "_id": "HlBJF6gaEHlzuaK4",
+  "name": "Abyssal Terror",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 162,
+        "max": 162,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "162"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 30,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 3,
+      "spellcasting": "",
+      "spelldc": 10
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Abyssal Terror.</strong> This warrior of Vampire Counts enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The grave is not an ending. It is a gate with my name upon it.”<br><em>— Mannfred von Carstein</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Grave Blade, Ancient Spear, Great Wight Blade, Necromantic Undead, Dark Vitality, Crypt Claws, Vampiric Sword, Deathless Will, Whirlwind Sweep, Leadership. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 8.0,
+      "xp": {
+        "value": 3600
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "necrotic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Vampire Counts"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Abyssal Terror.</strong> Abyssal Terror enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Death is not an ending. It is obedience made perfect.”<br><em>— a von Carstein noble</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Abyssal Terror",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.EAljABSE7bxM4jVg",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.VMJlmFrinevv9hHP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ca2kMJoJYd6nlJca",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.dD9ZmpSawGCKCX5h",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.THtQ4rnDT8nVPn6E",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.PUNh9LH0CS0z6yE4",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.87KsnEf2n9knEEUh",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ho7DflZcOiP6GU1a"
+      ],
+      "itemCount": 11,
+      "zeroEmbedding": true,
+      "sourceFaction": "vampire-counts"
+    }
+  },
+  "_stats": {}
+}

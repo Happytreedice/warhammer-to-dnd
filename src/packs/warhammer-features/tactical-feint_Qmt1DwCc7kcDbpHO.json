@@ -1,0 +1,36 @@
+{
+  "_id": "Qmt1DwCc7kcDbpHO",
+  "name": "Tactical Feint",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Tactical Feint.</strong> As a bonus action, the creature chooses one enemy within 30 feet that can see it and contests Charisma (Deception) against Wisdom (Insight). On a success, the creature has advantage on its next attack roll against that target before the end of this turn.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "save": {
+      "ability": "cha",
+      "dc": "8 + @prof + @abilities.cha.mod",
+      "scaling": "flat"
+    },
+    "formula": "(@details.level + @details.cr)"
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {}
+}

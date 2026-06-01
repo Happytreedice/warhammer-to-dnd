@@ -1,0 +1,52 @@
+{
+  "_id": "F6HHnX0zJbWGr0zv",
+  "name": "Tomb Kings of Khemri Relic",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Tomb Kings of Khemri Relic.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The dead do not forget who wore the crown.”<br><em>— a priest of Nehekhara</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "rarity": "veryRare",
+    "identified": true,
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "recharge",
+      "recovery": [
+        {
+          "period": "recharge",
+          "type": "formula",
+          "formula": "5"
+        }
+      ]
+    },
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "formula": "(@details.level + @details.cr)",
+    "save": {
+      "ability": "str",
+      "dc": "8 + @prof + @abilities.str.mod",
+      "scaling": "flat"
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_sourcePack": "khemri-items",
+  "_stats": {}
+}

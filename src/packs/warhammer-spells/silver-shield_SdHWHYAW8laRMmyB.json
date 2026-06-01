@@ -1,0 +1,95 @@
+{
+  "_id": "SdHWHYAW8laRMmyB",
+  "name": "Серебряный щит [Silver Shield]",
+  "type": "spell",
+  "img": "icons/magic/unholy/beam-impact-purple.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Серебряный щит [Silver Shield].</strong> <em>Recharge 2–6.</em> As an action, the caster releases the spell at a point or target within its listed range. The target resolves the saving throw or attack profile in this item data; on a failed save, it suffers the listed damage and conditions, while a successful save halves damage when the spell allows it. The spell cannot be used again until its recharge is rolled at the start of the caster’s turn.</p><p>The magic rises like a wound in the air, shaped by will and fear. Its power returns only when the winds gather again; until then it leaves the caster listening for the next tremor of sorcery beneath the world.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "level": 1,
+    "school": "abjuration",
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": "Recharge 2–6"
+    },
+    "duration": {
+      "value": null,
+      "units": "spec"
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": "spec",
+      "special": "60 футов"
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "recharge",
+      "recovery": [
+        {
+          "period": "recharge",
+          "type": "formula",
+          "formula": "2"
+        }
+      ]
+    },
+    "consume": {
+      "type": "",
+      "target": "",
+      "amount": null
+    },
+    "preparation": {
+      "mode": "atwill",
+      "prepared": true
+    },
+    "properties": [
+      "vocal",
+      "somatic"
+    ],
+    "materials": {
+      "value": "",
+      "consumed": false,
+      "cost": 0,
+      "supply": 0
+    },
+    "save": {
+      "ability": "int",
+      "dc": "8 + @prof + @abilities.int.mod",
+      "scaling": "flat"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "recharge": {
+      "value": 2,
+      "charged": true
+    },
+    "formula": "(@details.level + @details.cr)"
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_sourcePack": "old-world-spells",
+  "_stats": {}
+}

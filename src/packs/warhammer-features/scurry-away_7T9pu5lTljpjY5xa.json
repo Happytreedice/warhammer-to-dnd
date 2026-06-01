@@ -1,0 +1,68 @@
+{
+  "_id": "7T9pu5lTljpjY5xa",
+  "name": "Scurry Away!",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Scurry Away!.</strong> When an enemy ends its movement within 5 feet of this creature, the creature may use a bonus action on its next turn to move up to 10 feet without provoking opportunity attacks. It must end this movement closer to an ally or cover if possible.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "activation": {
+      "type": "bonus",
+      "cost": 1,
+      "condition": ""
+    },
+    "duration": {
+      "value": null,
+      "units": ""
+    },
+    "target": {
+      "value": null,
+      "width": null,
+      "units": "",
+      "type": ""
+    },
+    "range": {
+      "value": null,
+      "long": null,
+      "units": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": "",
+      "recovery": []
+    },
+    "ability": "dex",
+    "actionType": "other",
+    "attack": {
+      "bonus": "",
+      "flat": false
+    },
+    "save": {
+      "ability": "dex",
+      "dc": "8 + @prof + @abilities.dex.mod",
+      "scaling": "flat"
+    },
+    "damage": {
+      "parts": [],
+      "versatile": ""
+    },
+    "formula": "(@details.level + @details.cr)",
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_sourcePack": "skaven-items",
+  "_stats": {}
+}

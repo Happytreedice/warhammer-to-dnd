@@ -1,0 +1,338 @@
+{
+  "id": "warhammer-to-dnd",
+  "title": "Warhammer: The Old World D&D 5e Conversions — Zero Embedded Items",
+  "description": "Faction compendiums for Warhammer: The Old World converted to D&D 5e 2014 for Foundry VTT v14. Actors are zero-embedding containers with UUID references to atomized shared Item libraries.",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Happytreedice"
+    }
+  ],
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14"
+  },
+  "relationships": {
+    "systems": [
+      {
+        "id": "dnd5e",
+        "type": "system",
+        "compatibility": {
+          "minimum": "4.0.0"
+        }
+      }
+    ]
+  },
+  "packs": [
+    {
+      "name": "beastmen-brayherds-actors",
+      "label": "Beastmen Brayherds — Actors",
+      "path": "packs/beastmen-brayherds-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "chaos-dwarfs-actors",
+      "label": "Chaos Dwarfs — Actors",
+      "path": "packs/chaos-dwarfs-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "daemons-of-chaos-actors",
+      "label": "Daemons of Chaos — Actors",
+      "path": "packs/daemons-of-chaos-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dark-elf-actors",
+      "label": "Dark Elf — Actors",
+      "path": "packs/dark-elf-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "dwarfen-mountain-holds-actors",
+      "label": "Dwarfen Mountain Holds — Actors",
+      "path": "packs/dwarfen-mountain-holds-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "empire-of-man-actors",
+      "label": "Empire of Man — Actors",
+      "path": "packs/empire-of-man-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "high-elf-realms-actors",
+      "label": "High Elf Realms — Actors",
+      "path": "packs/high-elf-realms-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "khemri-actors",
+      "label": "Tomb Kings of Khemri — Actors",
+      "path": "packs/khemri-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "kingdom-of-bretonnia-actors",
+      "label": "Kingdom of Bretonnia — Actors",
+      "path": "packs/kingdom-of-bretonnia-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "lizardmen-actors",
+      "label": "Lizardmen — Actors",
+      "path": "packs/lizardmen-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "ogre-kingdoms-actors",
+      "label": "Ogre Kingdoms — Actors",
+      "path": "packs/ogre-kingdoms-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "orc-and-goblin-tribes-actors",
+      "label": "Orc & Goblin Tribes — Actors",
+      "path": "packs/orc-and-goblin-tribes-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "skaven-actors",
+      "label": "Skaven — Actors",
+      "path": "packs/skaven-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vampire-counts-actors",
+      "label": "Vampire Counts — Actors",
+      "path": "packs/vampire-counts-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "vyrkos-dynasty-actors",
+      "label": "Vyrkos Dynasty — Actors",
+      "path": "packs/vyrkos-dynasty-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warriors-of-chaos-actors",
+      "label": "Warriors of Chaos — Actors",
+      "path": "packs/warriors-of-chaos-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warriors-of-chaos-khorne-actors",
+      "label": "Warriors of Chaos — Khorne — Actors",
+      "path": "packs/warriors-of-chaos-khorne-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warriors-of-chaos-tzeentch-actors",
+      "label": "Warriors of Chaos — Tzeentch — Actors",
+      "path": "packs/warriors-of-chaos-tzeentch-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "wood-elf-realms-actors",
+      "label": "Wood Elf Realms — Actors",
+      "path": "packs/wood-elf-realms-actors",
+      "type": "Actor",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warhammer-weapons",
+      "label": "Warhammer Universal Weapons",
+      "path": "packs/warhammer-weapons",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warhammer-features",
+      "label": "Warhammer Universal Features",
+      "path": "packs/warhammer-features",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warhammer-equipment",
+      "label": "Warhammer Universal Equipment",
+      "path": "packs/warhammer-equipment",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "warhammer-spells",
+      "label": "Warhammer Universal Spells",
+      "path": "packs/warhammer-spells",
+      "type": "Item",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    },
+    {
+      "name": "conversion-journals",
+      "label": "Warhammer Conversion Journals",
+      "path": "packs/conversion-journals",
+      "type": "JournalEntry",
+      "system": "dnd5e",
+      "ownership": {
+        "PLAYER": "OBSERVER",
+        "ASSISTANT": "OWNER"
+      }
+    }
+  ],
+  "packFolders": [
+    {
+      "name": "Warhammer Conversions",
+      "sorting": "a",
+      "color": "#651414",
+      "packs": [
+        "beastmen-brayherds-actors",
+        "chaos-dwarfs-actors",
+        "conversion-journals",
+        "daemons-of-chaos-actors",
+        "dark-elf-actors",
+        "dwarfen-mountain-holds-actors",
+        "empire-of-man-actors",
+        "high-elf-realms-actors",
+        "khemri-actors",
+        "kingdom-of-bretonnia-actors",
+        "lizardmen-actors",
+        "ogre-kingdoms-actors",
+        "orc-and-goblin-tribes-actors",
+        "skaven-actors",
+        "vampire-counts-actors",
+        "vyrkos-dynasty-actors",
+        "warhammer-equipment",
+        "warhammer-features",
+        "warhammer-spells",
+        "warhammer-weapons",
+        "warriors-of-chaos-actors",
+        "warriors-of-chaos-khorne-actors",
+        "warriors-of-chaos-tzeentch-actors",
+        "wood-elf-realms-actors"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    },
+    {
+      "lang": "ru",
+      "name": "Русский",
+      "path": "lang/ru.json"
+    }
+  ],
+  "name": "warhammer-to-dnd"
+}

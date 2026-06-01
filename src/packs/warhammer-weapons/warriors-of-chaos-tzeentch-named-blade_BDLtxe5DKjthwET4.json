@@ -1,0 +1,76 @@
+{
+  "_id": "BDLtxe5DKjthwET4",
+  "name": "Warriors of Chaos — Tzeentch Named Blade",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Warriors of Chaos — Tzeentch Named Blade.</strong> <em>Melee Weapon Attack:</em> +@mod + @prof to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + @mod slashing damage.</p><p>The weapon carries the habits of its makers: iron darkened by smoke, edges nicked by old wars, and balance tuned for the cruel seconds when a line breaks. It is not an ornament but a battlefield answer, meant to decide distance, courage, and blood before mercy can speak.</p><blockquote><p>“Every answer is a feather shed from a greater lie.”<br><em>— a magister of Tzeentch</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "quantity": 1,
+    "weight": 0,
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "attunement": 1,
+    "equipped": false,
+    "type": {
+      "value": "longsword",
+      "baseItem": "longsword"
+    },
+    "properties": [
+      "mgc"
+    ],
+    "activation": {
+      "type": "action",
+      "cost": 1,
+      "condition": ""
+    },
+    "damage": {
+      "parts": [
+        [
+          "1d8",
+          "slashing"
+        ]
+      ],
+      "versatile": ""
+    },
+    "range": {
+      "value": 5,
+      "long": null,
+      "units": "ft"
+    },
+    "target": {
+      "value": 1,
+      "width": null,
+      "units": "",
+      "type": "creature"
+    },
+    "actionType": "mwak",
+    "ability": "str",
+    "formula": "(@details.level + @details.cr)",
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "save": {
+      "ability": "str",
+      "dc": "8 + @prof + @abilities.str.mod",
+      "scaling": "flat"
+    }
+  },
+  "effects": [],
+  "_sourcePack": "warriors-of-chaos-tzeentch-items",
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {}
+}

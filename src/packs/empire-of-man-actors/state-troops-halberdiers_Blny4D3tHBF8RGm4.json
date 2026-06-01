@@ -1,0 +1,177 @@
+{
+  "_id": "Blny4D3tHBF8RGm4",
+  "name": "State Troops Halberdiers",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 12,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 27,
+        "max": 27,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "27"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 2,
+      "spellcasting": "",
+      "spelldc": 9
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>State Troops Halberdiers.</strong> This warrior of Empire of Man enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Hold the line, and the line will hold the Empire.”<br><em>— Karl Franz</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Imperial Sword, Halberd, Pike, Greatsword, Handgun, Longsword, Pistol, State Troop Discipline. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 0.5,
+      "xp": {
+        "value": 50
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Empire of Man"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>State Troops Halberdiers.</strong> State Troops Halberdiers enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Powder, prayer, and pike — in that order.”<br><em>— an Imperial captain</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "State Troops Halberdiers",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MBFKfsrwKdkXUU6p",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.wGtvnlX1EcdC7VSP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Mc3PzM0ArGWOzdys",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FnB30WbKq2ghQJCA",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.0qEkclCFxhE3EjPD",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Vlucghin4nCBhB1w",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.pmzfEhlL8qDz9mv2",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.basjKOQKLwow5UH3"
+      ],
+      "itemCount": 8,
+      "zeroEmbedding": true,
+      "sourceFaction": "empire-of-man"
+    }
+  },
+  "_stats": {}
+}

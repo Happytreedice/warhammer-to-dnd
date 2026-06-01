@@ -1,0 +1,178 @@
+{
+  "_id": "WP72dQY5yD8HLX8u",
+  "name": "Khorne Chaos Warriors",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 15,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 13,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 72,
+        "max": 72,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "72"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 2,
+      "spellcasting": "",
+      "spelldc": 9
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Khorne Chaos Warriors.</strong> This warrior of Warriors of Chaos — Khorne enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Mercy is a shield for the weak. Break it.”<br><em>— Valkia the Bloody</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Hellforged Axe, Brass Sword, Skull Flail, Blood for the Blood God, Axe of Khorne, Barbed Spear, Great Axe, Dark Favor, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 3.0,
+      "xp": {
+        "value": 1350
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Warriors of Chaos — Khorne"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Khorne Chaos Warriors.</strong> Khorne Chaos Warriors enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Blood is the only argument that cannot be refuted.”<br><em>— a champion of Khorne</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Khorne Chaos Warriors",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SUWNUDv4rsJPBobd",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.w4lbb7U2QxhpqzPI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Zg1V9bb9lALMEIga",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ZN0zh4EB68LF3zh",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.A1bTA3rduRArep7r",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+      ],
+      "itemCount": 9,
+      "zeroEmbedding": true,
+      "sourceFaction": "warriors-of-chaos-khorne"
+    }
+  },
+  "_stats": {}
+}

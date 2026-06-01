@@ -1,0 +1,25 @@
+{
+  "module": "warhammer-to-dnd",
+  "zeroEmbedding": true,
+  "actorItemsPolicy": "Actor.items arrays are empty; every Actor carries UUID links in flags.warhammerConversions.itemUuids.",
+  "actorCount": 422,
+  "embeddedItemsRemoved": 4333,
+  "uuidReferencesCreated": 4335,
+  "itemPacks": [
+    "warhammer-equipment",
+    "warhammer-features",
+    "warhammer-spells",
+    "warhammer-weapons"
+  ],
+  "antiTruncation": "Validator rejects JSON files below 1200 bytes and invalid JSON.parse.",
+  "forbiddenFlagsPurged": [
+    "flags.warhammer-tow-dnd5e",
+    "flags.dnd5e.disadvantage"
+  ],
+  "sourceFiles": [
+    "Варплок-джеззайл для D&D 5e.txt",
+    "Warhammer Tow D&D 5e.txt",
+    "Конверсия армий Warhammer.txt",
+    "Конверсия вампиров в D&D.txt"
+  ]
+}

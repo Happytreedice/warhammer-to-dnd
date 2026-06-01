@@ -1,0 +1,179 @@
+{
+  "_id": "Oe4cA91OHjtCKjd8",
+  "name": "Doombull",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 18,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 180,
+        "max": 180,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "180"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 4,
+      "spellcasting": "",
+      "spelldc": 11
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Doombull.</strong> This warrior of Beastmen Brayherds enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Civilisation is only kindling waiting for horns.”<br><em>— Morghur</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Gnarled Axe, Bray Spear, Bestial Claws, Gor Axe, Hunting Spear, Throwing Axe, Primal Ambush, Whirlwind Sweep, Positional Trip. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 9.0,
+      "xp": {
+        "value": 4050
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "monstrosity",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Beastmen Brayherds"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Doombull.</strong> Doombull enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Doombull",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.g6HWVtiHQlAtUGgK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YHNdlGbQLDu7FaY8",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.56xmOsadIUKMkjfK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.9yfju9r1BHoOCOQZ",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.1vSF5C09EW3Yu9Do",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.iPk8XXjtGR3fhqEA",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.nWWgdjIjqAf3ApiF"
+      ],
+      "itemCount": 10,
+      "zeroEmbedding": true,
+      "sourceFaction": "beastmen-brayherds"
+    }
+  },
+  "_stats": {}
+}

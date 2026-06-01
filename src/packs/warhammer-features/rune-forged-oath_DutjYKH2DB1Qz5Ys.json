@@ -1,0 +1,44 @@
+{
+  "_id": "DutjYKH2DB1Qz5Ys",
+  "name": "Rune-Forged Oath",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Rune-Forged Oath.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": null,
+      "max": "",
+      "per": null,
+      "recovery": ""
+    },
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "formula": "(@details.level + @details.cr)",
+    "save": {
+      "ability": "str",
+      "dc": "8 + @prof + @abilities.str.mod",
+      "scaling": "flat"
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_sourcePack": "shared-traits-and-features",
+  "_stats": {}
+}

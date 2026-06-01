@@ -1,0 +1,178 @@
+{
+  "_id": "hnZWv8ZGfl4hRCyv",
+  "name": "Bastiladon",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 14,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 16,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 162,
+        "max": 162,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "162"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 3,
+      "spellcasting": "",
+      "spelldc": 10
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Bastiladon.</strong> This warrior of Lizardmen enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The stars remember the first commandment; the faithful merely obey it.”<br><em>— Lord Kroak</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Celestite Club, Obsidian Spear, Javelin, Cold-Blooded Purpose, Blowpipe, Hunting Spear, Cold-Blooded Discipline, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 8.0,
+      "xp": {
+        "value": 3600
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Lizardmen"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Bastiladon.</strong> Bastiladon enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The plan was old before your gods learned to speak.”<br><em>— a Slann mage-priest</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Bastiladon",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v3dNkBILm2LrN225",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.BIr6EIHd4Z2RhyMZ",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v57o5vDODC6oqEGF",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.8rfUG0K7Vbl1JW5F",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.X7m4K7N09LIwUr3S",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+      ],
+      "itemCount": 9,
+      "zeroEmbedding": true,
+      "sourceFaction": "lizardmen"
+    }
+  },
+  "_stats": {}
+}

@@ -1,0 +1,176 @@
+{
+  "_id": "3ITKi78ZIF3elqaQ",
+  "name": "Chaos Warhounds",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 12,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 36,
+        "max": 36,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "36"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 2,
+      "spellcasting": "",
+      "spelldc": 9
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Chaos Warhounds.</strong> This warrior of Warriors of Chaos enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“All paths end beneath the tread of the chosen.”<br><em>— Archaon</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Chaos Hand Weapon, Great Axe, Lance, Barbed Spear, Chaos Blade, Halberd, Dark Favor. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 1.0,
+      "xp": {
+        "value": 450
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Warriors of Chaos"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Chaos Warhounds.</strong> Chaos Warhounds enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The north wind does not bargain.”<br><em>— a warlord of Chaos</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Chaos Warhounds",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.eYI9qL7y5KmcQLWG",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.A1bTA3rduRArep7r",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ys6yWYvtP3V4Bo77",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Vl30u77NdNf1loPr",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.wGtvnlX1EcdC7VSP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE"
+      ],
+      "itemCount": 7,
+      "zeroEmbedding": true,
+      "sourceFaction": "warriors-of-chaos"
+    }
+  },
+  "_stats": {}
+}

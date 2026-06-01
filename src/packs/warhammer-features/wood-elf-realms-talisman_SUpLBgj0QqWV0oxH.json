@@ -1,0 +1,52 @@
+{
+  "_id": "SUpLBgj0QqWV0oxH",
+  "name": "Wood Elf Realms Talisman",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Wood Elf Realms Talisman.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“A blade is merely a decision made visible.”<br><em>— an Elven lord</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "rarity": "uncommon",
+    "identified": true,
+    "activation": {
+      "type": "special",
+      "cost": null,
+      "condition": ""
+    },
+    "uses": {
+      "value": 1,
+      "max": "1",
+      "per": "recharge",
+      "recovery": [
+        {
+          "period": "recharge",
+          "type": "formula",
+          "formula": "5"
+        }
+      ]
+    },
+    "scaling": {
+      "mode": "formula",
+      "formula": "the creature’s war-scaling value"
+    },
+    "formula": "(@details.level + @details.cr)",
+    "save": {
+      "ability": "str",
+      "dc": "8 + @prof + @abilities.str.mod",
+      "scaling": "flat"
+    }
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_sourcePack": "wood-elf-realms-items",
+  "_stats": {}
+}

@@ -1,0 +1,179 @@
+{
+  "_id": "vyGk924Ji1BzLJTc",
+  "name": "Tzeentch Chosen",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 108,
+        "max": 108,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "108"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 3,
+      "spellcasting": "",
+      "spelldc": 10
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Tzeentch Chosen.</strong> This warrior of Warriors of Chaos — Tzeentch enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Change is not a lie; it is the shape truth takes when fools look away.”<br><em>— Kairos Fateweaver</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Ensorcelled Blade, Warpfire Bolt, Mutating Staff, Fated Mutation, Barbed Spear, Sorcerous Staff, Warpfire Blade, Dark Favor, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 5.0,
+      "xp": {
+        "value": 2250
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Warriors of Chaos — Tzeentch"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Tzeentch Chosen.</strong> Tzeentch Chosen enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Every answer is a feather shed from a greater lie.”<br><em>— a magister of Tzeentch</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Tzeentch Chosen",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.DQZlw3iKPrzklqmH",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.5RTtZoHYbRIX1JnF",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.XRoMIHt0Xu1ZCHzV",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.bm9Do8IQSeSfSgaU",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ux5VcVFbJeN8Yh1l",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FitCMkEG9j1Ar8ha",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+      ],
+      "itemCount": 10,
+      "zeroEmbedding": true,
+      "sourceFaction": "warriors-of-chaos-tzeentch"
+    }
+  },
+  "_stats": {}
+}

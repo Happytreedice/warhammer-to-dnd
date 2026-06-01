@@ -1,0 +1,13 @@
+{
+  "type": "module",
+  "scripts": {
+    "pack": "node scripts/build-packs.mjs",
+    "validate": "node scripts/validate.mjs",
+    "zip": "node scripts/zip-module.mjs"
+  },
+  "devDependencies": {
+    "@foundryvtt/foundryvtt-cli": "latest"
+  },
+  "name": "warhammer-to-dnd",
+  "version": "1.0.0-zero-embedding"
+}

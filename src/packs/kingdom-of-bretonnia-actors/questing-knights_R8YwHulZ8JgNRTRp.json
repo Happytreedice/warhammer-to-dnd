@@ -1,0 +1,181 @@
+{
+  "_id": "R8YwHulZ8JgNRTRp",
+  "name": "Questing Knights",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 16,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 15,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 14,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 90,
+        "max": 90,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "90"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 2,
+      "spellcasting": "",
+      "spelldc": 9
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Questing Knights.</strong> This warrior of Kingdom of Bretonnia enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“A knight’s oath is a blade pointed at despair.”<br><em>— Louen Leoncoeur</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Knightly Sword, Lance, Longbow, Hooves and Wheels, Hunting Spear, Knightly Lance, Longsword, Blessing of the Lady, Whirlwind Sweep, Leadership, Positional Trip. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 4.0,
+      "xp": {
+        "value": 1800
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Kingdom of Bretonnia"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Questing Knights.</strong> Questing Knights enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Honour is a lance levelled at fear.”<br><em>— a Bretonnian paladin</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Questing Knights",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.fwCNQuOt0GNKya2E",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ys6yWYvtP3V4Bo77",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YkivuT7Jof1CEMMa",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.niPxmuLjzL8HHUPD",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.bRi15coXLDwfPCu1",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Vlucghin4nCBhB1w",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.2RRgafNQsT4SHhFt",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ho7DflZcOiP6GU1a",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.nWWgdjIjqAf3ApiF"
+      ],
+      "itemCount": 12,
+      "zeroEmbedding": true,
+      "sourceFaction": "kingdom-of-bretonnia"
+    }
+  },
+  "_stats": {}
+}

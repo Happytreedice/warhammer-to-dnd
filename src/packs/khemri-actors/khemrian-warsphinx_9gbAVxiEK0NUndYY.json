@@ -1,0 +1,185 @@
+{
+  "_id": "9gbAVxiEK0NUndYY",
+  "name": "Khemrian Warsphinx",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 8,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "flat": 17,
+        "calc": "flat",
+        "formula": ""
+      },
+      "hp": {
+        "value": 230,
+        "max": 230,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "230"
+      },
+      "movement": {
+        "walk": 30,
+        "fly": 0,
+        "swim": 0,
+        "burrow": 0,
+        "climb": 0,
+        "units": "ft",
+        "hover": false
+      },
+      "prof": 4,
+      "spellcasting": "",
+      "spelldc": 11
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Khemrian Warsphinx.</strong> This warrior of Tomb Kings of Khemri enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Dust remembers kings better than flesh ever could.”<br><em>— Settra</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Khopesh, Ancient Spear, Warbow, Scorpion Claws, Chariot Blade, Greatbow, Necromantic Undead, Deathless Will, Rapid Volley. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "public": ""
+      },
+      "cr": 10.0,
+      "xp": {
+        "value": 4500
+      },
+      "source": {
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "undead",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment"
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [
+          "poison"
+        ],
+        "custom": ""
+      },
+      "dr": {
+        "value": [
+          "necrotic"
+        ],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [
+          "poisoned"
+        ],
+        "custom": ""
+      },
+      "languages": {
+        "value": [],
+        "custom": "Tomb Kings of Khemri"
+      }
+    },
+    "source": {
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "formula": "the creature’s war-scaling value",
+    "description": {
+      "value": "<p><strong>Khemrian Warsphinx.</strong> Khemrian Warsphinx enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The dead do not forget who wore the crown.”<br><em>— a priest of Nehekhara</em></p></blockquote>",
+      "chat": "",
+      "unidentified": ""
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 2,
+    "height": 2,
+    "name": "Khemrian Warsphinx",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "warhammerConversions": {
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.JCxsbU7GcC2NABI7",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.yQzyrGIDqyvAcKVs",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.cU9I2JrAg807lCnY",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.N1rP6bU6R1hzq6ch",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.IGtffW3GkulATWAO",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ca2kMJoJYd6nlJca",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.87KsnEf2n9knEEUh",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.wgBTmICM5yHUwH6O"
+      ],
+      "itemCount": 10,
+      "zeroEmbedding": true,
+      "sourceFaction": "khemri"
+    }
+  },
+  "_stats": {}
+}
