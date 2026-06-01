@@ -1,6 +1,6 @@
 {
   "id": "warhammer-to-dnd",
-  "title": "Warhammer: The Old World D&D 5e Conversions — Zero Embedded Items",
+  "title": "Warhammer: The Old World to D&D 5e",
   "description": "Faction compendiums for Warhammer: The Old World converted to D&D 5e 2014 for Foundry VTT v14. Actors are zero-embedding containers with UUID references to atomized shared Item libraries.",
   "version": "1.0.0",
   "authors": [
@@ -18,7 +18,7 @@
         "id": "dnd5e",
         "type": "system",
         "compatibility": {
-          "minimum": "4.0.0"
+          "minimum": "5.3.3"
         }
       }
     ]
