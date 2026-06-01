@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 15,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -14,7 +14,7 @@
         }
       },
       "dex": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,22 +22,6 @@
         }
       },
       "con": {
-        "value": 15,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "int": {
-        "value": 16,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "wis": {
         "value": 14,
         "proficient": 0,
         "bonuses": {
@@ -45,8 +29,24 @@
           "save": ""
         }
       },
+      "int": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
       "cha": {
-        "value": 16,
+        "value": 14,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 15,
         "calc": "flat",
-        "formula": ""
+        "flat": 16,
+        "formula": "",
+        "value": 16
       },
       "hp": {
-        "value": 144,
-        "max": 144,
+        "value": 150,
+        "max": 150,
         "temp": 0,
         "tempmax": 0,
-        "formula": "144"
+        "formula": "150"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
+      "prof": 4,
       "spellcasting": "int",
-      "spelldc": 14
+      "spelldc": 18,
+      "spell": {
+        "level": 11
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Master Necromancer.</strong> This commander of Vampire Counts enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The grave is not an ending. It is a gate with my name upon it.”<br><em>— Mannfred von Carstein</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Grave Blade, Ancient Spear, Great Wight Blade, Ritual Dagger, Focus Strike, Necromantic Undead, Dark Vitality, Leadership, Arcane Staff, Crypt Claws, Vampiric Sword, Deathless Will, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Master Necromancer.</strong> A caster presence from the Vampire Counts, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 16; HP 150; proficiency +4; save DC 18. Linked armory entries: 16. Linked spell entries: 4.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 7.0,
+      "cr": 11,
       "xp": {
-        "value": 3150
+        "value": 7200
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "med",
@@ -125,18 +154,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Vampire Counts"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Master Necromancer.</strong> Master Necromancer enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Death is not an ending. It is obedience made perfect.”<br><em>— a von Carstein noble</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -163,27 +208,50 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "caster",
+      "faction": "Vampire Counts",
+      "pf2eBenchmark": {
+        "level": 11,
+        "band": "caster-moderate",
+        "mappedToChallengeRating": 11
+      },
       "itemUuids": [
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.EAljABSE7bxM4jVg",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.VMJlmFrinevv9hHP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.KVTpt3stBIn9cNeh",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SNHyIt6S2F0WS3wW",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ca2kMJoJYd6nlJca",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.dD9ZmpSawGCKCX5h",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ho7DflZcOiP6GU1a",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.dbfcf4abcc321075",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
         "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SAXjiLW5RQ1zgJSY",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.THtQ4rnDT8nVPn6E",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.PUNh9LH0CS0z6yE4",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.87KsnEf2n9knEEUh",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.Mad3f7huQyl9u6np",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.WlzalV6fY9xzY43T",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.rFlTD8J42i4Vr6dy",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.B3eDrKWcb3WCR2JX",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.VR5Q0zXUpM9uRcpW",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.jSJM78vWGH5SjMSZ",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5USvZmc1g0iXQTEn",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo"
       ],
-      "itemCount": 14,
-      "zeroEmbedding": true,
-      "sourceFaction": "vampire-counts"
+      "spellUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.A24xT1cLxwNZsiAp",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.bLicqa9xSC72f48G",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.7uxz5ez0pzy9i2zh",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.lGtb4HSJk7tuAWBy"
+      ]
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

@@ -5,64 +5,132 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Dark Vitality.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Dark Vitality.</strong> Dark Vitality is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": "If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "activation": {
-      "type": "special",
-      "cost": null,
-      "condition": ""
-    },
-    "duration": {
-      "value": null,
-      "units": ""
-    },
-    "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
-    },
-    "range": {
-      "value": null,
-      "long": null,
-      "units": ""
-    },
     "uses": {
-      "value": null,
+      "spent": 0,
       "max": "",
-      "per": "",
       "recovery": []
     },
-    "ability": "cha",
-    "actionType": "other",
-    "attack": {
-      "bonus": "",
-      "flat": false
+    "identifier": "dark-vitality",
+    "activities": {
+      "1e7c3036b1811c65": {
+        "_id": "1e7c3036b1811c65",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
+    "enchant": {},
+    "type": {
+      "value": "monster",
+      "subtype": ""
     },
-    "damage": {
-      "parts": [],
-      "versatile": ""
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
     },
-    "formula": "(@details.level + @details.cr)",
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    }
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
   },
   "effects": [],
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "vampire-counts-items",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

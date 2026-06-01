@@ -14,7 +14,7 @@
         }
       },
       "dex": {
-        "value": 18,
+        "value": 20,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 18,
+        "value": 20,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -30,7 +30,7 @@
         }
       },
       "int": {
-        "value": 9,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 14,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 19,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 18,
         "calc": "flat",
-        "formula": ""
+        "flat": 23,
+        "formula": "",
+        "value": 23
       },
       "hp": {
-        "value": 235,
-        "max": 235,
+        "value": 802,
+        "max": 802,
         "temp": 0,
         "tempmax": 0,
-        "formula": "235"
+        "formula": "802"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 4,
+      "prof": 7,
       "spellcasting": "",
-      "spelldc": 11
+      "spelldc": 24,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Carnosaur Rider.</strong> This warrior of Lizardmen enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The stars remember the first commandment; the faithful merely obey it.”<br><em>— Lord Kroak</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Celestite Club, Obsidian Spear, Javelin, Predatory Bite, Cold-Blooded Purpose, Blowpipe, Hooves and Wheels, Hunting Spear, Lance, Cold-Blooded Discipline, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Carnosaur Rider.</strong> A solo presence from the Lizardmen, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 23; HP 802; proficiency +7; save DC 24. Linked armory entries: 13. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 12.0,
+      "cr": 24,
       "xp": {
-        "value": 5400
+        "value": 62000
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "lg",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Lizardmen"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Carnosaur Rider.</strong> Carnosaur Rider enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The plan was old before your gods learned to speak.”<br><em>— a Slann mage-priest</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 3,
+        "spent": 0
+      },
+      "legres": {
+        "max": 2,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,25 +202,42 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "solo",
+      "faction": "Lizardmen",
+      "pf2eBenchmark": {
+        "level": 24,
+        "band": "solo-moderate",
+        "mappedToChallengeRating": 24
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.fee75794a35e05d0",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.56xmOsadIUKMkjfK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.TZ4rUXur8wMBY30m",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.axCQr63h8IxUYTSi",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Npz6Z9AfUfniDzO8",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.41Zz4Shx6YmoIrdT",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.yBrtmpaDtvOwsKvV",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v3dNkBILm2LrN225",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.BIr6EIHd4Z2RhyMZ",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v57o5vDODC6oqEGF",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.B9R4oBalPP9OaVoo",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.8rfUG0K7Vbl1JW5F",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.X7m4K7N09LIwUr3S",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.niPxmuLjzL8HHUPD",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ys6yWYvtP3V4Bo77",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.QcgOuvgB8aqcdlgm"
       ],
-      "itemCount": 12,
-      "zeroEmbedding": true,
-      "sourceFaction": "lizardmen"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

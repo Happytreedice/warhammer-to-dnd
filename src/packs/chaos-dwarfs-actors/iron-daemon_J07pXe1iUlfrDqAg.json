@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 15,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -14,7 +14,7 @@
         }
       },
       "dex": {
-        "value": 10,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 15,
+        "value": 14,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -30,7 +30,7 @@
         }
       },
       "int": {
-        "value": 9,
+        "value": 18,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 13,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 17,
+        "value": 15,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 17,
         "calc": "flat",
-        "formula": ""
+        "flat": 17,
+        "formula": "",
+        "value": 17
       },
       "hp": {
-        "value": 198,
-        "max": 198,
+        "value": 186,
+        "max": 186,
         "temp": 0,
         "tempmax": 0,
-        "formula": "198"
+        "formula": "186"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 4,
-      "spellcasting": "",
-      "spelldc": 11
+      "prof": 5,
+      "spellcasting": "int",
+      "spelldc": 20,
+      "spell": {
+        "level": 14
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Iron Daemon.</strong> This warrior of Chaos Dwarfs enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Ash is the oath, iron is the answer.”<br><em>— Astragoth Ironhand</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Infernal Axe, Blackshard Blunderbuss, Fireglaive, Infernal Industry, Blunderbuss, Obsidian Hammer, Resilience, Dark Favor, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Iron Daemon.</strong> A caster presence from the Chaos Dwarfs, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 17; HP 186; proficiency +5; save DC 20. Linked armory entries: 16. Linked spell entries: 3.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 10.0,
+      "cr": 14,
       "xp": {
-        "value": 4500
+        "value": 11500
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "lg",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "dwarvish"
+        ],
         "custom": "Chaos Dwarfs"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Iron Daemon.</strong> Iron Daemon enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“A grudge is a stone. Carry it long enough and it becomes a mountain.”<br><em>— a Dwarf thane</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,23 +202,49 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "caster",
+      "faction": "Chaos Dwarfs",
+      "pf2eBenchmark": {
+        "level": 14,
+        "band": "caster-moderate",
+        "mappedToChallengeRating": 14
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.dbfcf4abcc321075",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SAXjiLW5RQ1zgJSY",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.Uw0VViz2YEzaHk5q",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.LP4SvoupY7grSlXQ",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.DnBRKyILbKaTS4eo",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MHaZ2aBa9dNm9IAz",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.JWR8OV4x4EtSBsIY",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.GrIx1Gwz5xCL5PZN",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DoBLynzfJYBwj1Mf",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.0bJg8mlDFxAbRKd0",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.xRBmziNZMIbMXiTo",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.VYuJ4bbfCLFoTGeZ",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.KVKKS7zqB6sOe5BZ",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.6220QvkzQT5JxrS1",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YUrIoXAfihocEOoE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.CcgDVEmDx8sGBsRn",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo"
       ],
-      "itemCount": 10,
-      "zeroEmbedding": true,
-      "sourceFaction": "chaos-dwarfs"
+      "spellUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.7uxz5ez0pzy9i2zh",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.iOJkN51CqjBuxFBd",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.Ra1YLRnsFtNLZlgC"
+      ]
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

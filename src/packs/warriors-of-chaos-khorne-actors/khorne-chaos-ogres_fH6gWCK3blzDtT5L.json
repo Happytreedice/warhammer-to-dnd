@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 15,
+        "value": 16,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 14,
         "calc": "flat",
-        "formula": ""
+        "flat": 13,
+        "formula": "",
+        "value": 13
       },
       "hp": {
-        "value": 116,
-        "max": 116,
+        "value": 30,
+        "max": 30,
         "temp": 0,
         "tempmax": 0,
-        "formula": "116"
+        "formula": "30"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
+      "prof": 2,
       "spellcasting": "",
-      "spelldc": 10
+      "spelldc": 11,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Khorne Chaos Ogres.</strong> This warrior of Warriors of Chaos — Khorne enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Mercy is a shield for the weak. Break it.”<br><em>— Valkia the Bloody</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Hellforged Axe, Brass Sword, Skull Flail, Massive Projectile / Boulder Throw, Blood for the Blood God, Axe of Khorne, Barbed Spear, Great Axe, Dark Favor, Whirlwind Sweep, Positional Trip. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Khorne Chaos Ogres.</strong> A minor presence from the Warriors of Chaos - Khorne, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 13; HP 30; proficiency +2; save DC 11. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 5.0,
+      "cr": 1,
       "xp": {
-        "value": 2250
+        "value": 200
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "med",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
-        "custom": "Warriors of Chaos — Khorne"
-      }
+        "value": [
+          "abyssal"
+        ],
+        "custom": "Warriors of Chaos - Khorne"
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Khorne Chaos Ogres.</strong> Khorne Chaos Ogres enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Blood is the only argument that cannot be refuted.”<br><em>— a champion of Khorne</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,25 +202,45 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "minor",
+      "faction": "Warriors of Chaos - Khorne",
+      "pf2eBenchmark": {
+        "level": 1,
+        "band": "minor-moderate",
+        "mappedToChallengeRating": 1
+      },
       "itemUuids": [
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SUWNUDv4rsJPBobd",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.w4lbb7U2QxhpqzPI",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Zg1V9bb9lALMEIga",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.AHMOaMO9UpNHLUZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ZN0zh4EB68LF3zh",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
         "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.A1bTA3rduRArep7r",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.nWWgdjIjqAf3ApiF"
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.5iCDBX71s3hc4BdS",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.YVJKOMhJSGjqPPbZ",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.dMh9805p8spOV2CM",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.XkwwCfsEFEwtWzMn",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.dg1RKu7sbBFd76tL",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZaDVcBQLq6eFVccp",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.NZIIDWPSNT5FevMY",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK"
       ],
-      "itemCount": 12,
-      "zeroEmbedding": true,
-      "sourceFaction": "warriors-of-chaos-khorne"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

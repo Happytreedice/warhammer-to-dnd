@@ -5,24 +5,20 @@
   "img": "icons/weapons/swords/sword-broad-steel.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Dwarfen Mountain Holds Blade.</strong> <em>Melee Weapon Attack:</em> +@mod + @prof to hit, reach 5 ft., one target. <em>Hit:</em> 1d8 + @mod slashing damage.</p><p>The weapon carries the habits of its makers: iron darkened by smoke, edges nicked by old wars, and balance tuned for the cruel seconds when a line breaks. It is not an ornament but a battlefield answer, meant to decide distance, courage, and blood before mercy can speak.</p><blockquote><p>“A grudge is a stone. Carry it long enough and it becomes a mountain.”<br><em>— a Dwarf thane</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Dwarfen Mountain Holds Blade.</strong> Dwarfen Mountain Holds Blade is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: sap.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+      "chat": "Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: sap."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
     "rarity": "rare",
     "identified": true,
-    "activation": {
-      "type": "action",
-      "cost": 1,
-      "condition": ""
-    },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
       "recovery": [
         {
           "period": "recharge",
@@ -31,51 +27,249 @@
         }
       ]
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    },
     "type": {
       "value": "martialM",
       "baseItem": "longsword"
     },
     "properties": [
-      "mgc"
+      "mgc",
+      "ver"
     ],
     "damage": {
-      "parts": [
-        [
-          "1d8",
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
           "slashing"
-        ]
-      ],
-      "versatile": ""
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      },
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      }
     },
-    "range": {
-      "value": 5,
-      "long": null,
-      "units": "ft"
+    "identifier": "dwarfen-mountain-holds-blade",
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
     },
-    "target": {
-      "value": 1,
-      "width": null,
-      "units": "",
-      "type": "creature"
+    "price": {
+      "value": 0,
+      "denomination": "gp"
     },
-    "ability": "str",
-    "actionType": "mwak",
-    "formula": "(@details.level + @details.cr)",
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
-    }
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {
+      "dca9b4fc84753407": {
+        "_id": "dca9b4fc84753407",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "5",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "5"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "attack",
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "proficient": null,
+    "magicalBonus": null,
+    "mastery": "sap",
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "cover": null,
+    "crewed": false
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "1ff61bc1aaeeaf72",
+      "name": "Dwarfen Mountain Holds Blade: Enchanted Edge",
+      "img": "icons/weapons/swords/sword-broad-steel.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
   "sort": 0,
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "dwarfen-mountain-holds-items",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null
 }

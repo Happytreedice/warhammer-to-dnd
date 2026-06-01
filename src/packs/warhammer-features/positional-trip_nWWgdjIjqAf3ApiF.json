@@ -5,32 +5,132 @@
   "img": "icons/skills/melee/strike-weapon-polearm-ice-blue.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Positional Trip.</strong> Once on each of its turns when the creature hits with a melee weapon attack, it may force the target to make a Strength saving throw. On a failure, the target is knocked prone or pushed 5 feet, creature’s choice.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
-    },
-    "activation": {
-      "type": "bonus",
-      "cost": 1,
-      "condition": ""
+      "value": "<p><strong>Positional Trip.</strong> Positional Trip is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": "If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
+    "identifier": "positional-trip",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
+    "activities": {
+      "7b53119449461733": {
+        "_id": "7b53119449461733",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "formula": "(@details.level + @details.cr)"
+    "enchant": {},
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
   },
   "effects": [],
   "ownership": {
     "default": 0
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

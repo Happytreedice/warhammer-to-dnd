@@ -5,32 +5,132 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Rapid Volley.</strong> As an action, the creature targets a 10-foot-radius area within normal range of a ranged weapon. Each creature there makes a Dexterity saving throw, taking 10 (3d6) piercing damage on a failed save, or half on a success.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
-    },
-    "activation": {
-      "type": "action",
-      "cost": 1,
-      "condition": ""
+      "value": "<p><strong>Rapid Volley.</strong> Rapid Volley is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration.</p><blockquote><p>\"A spell is courage given a sharper name.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": "If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
+    "identifier": "rapid-volley",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "save": {
-      "ability": "dex",
-      "dc": "8 + @prof + @abilities.dex.mod",
-      "scaling": "flat"
+    "activities": {
+      "a32e71973babc601": {
+        "_id": "a32e71973babc601",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "dex",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "formula": "(@details.level + @details.cr)"
+    "enchant": {},
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
   },
   "effects": [],
   "ownership": {
     "default": 0
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

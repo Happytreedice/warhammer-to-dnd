@@ -5,24 +5,20 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Skaven Armour.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“Yes-yes, run first, stab later.”<br><em>— a Skaven clawleader</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Skaven Armour.</strong> Skaven Armour carries the hard doctrine of the Skaven: a practical piece of war-gear made to keep its bearer standing when the press of shields turns desperate.</p><p><strong>Mechanics.</strong> Armor Class 15; Dexterity cap 2; Strength requirement 0.</p><blockquote><p>\"Victory belongs to the hand that does not tremble at dusk.\"<br><em>- Old World armorer's maxim</em></p></blockquote>",
+      "chat": "Armor Class 15; Dexterity cap 2; Strength requirement 0."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
     "rarity": "rare",
     "identified": true,
-    "activation": {
-      "type": "special",
-      "cost": null,
-      "condition": ""
-    },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
       "recovery": [
         {
           "period": "recharge",
@@ -31,38 +27,46 @@
         }
       ]
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    },
     "type": {
-      "value": "heavy",
-      "baseItem": "plate"
+      "value": "medium",
+      "baseItem": "halfplate"
     },
     "armor": {
-      "value": 18,
-      "dex": 0,
-      "magicalBonus": 1
+      "value": 15,
+      "magicalBonus": null,
+      "dex": 2
     },
     "properties": [
       "mgc"
     ],
-    "ability": "str",
-    "actionType": "mwak",
-    "damage": {
-      "parts": [
-        [
-          "1d8",
-          "slashing"
-        ]
-      ],
-      "versatile": ""
+    "identifier": "skaven-armour",
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
     },
-    "formula": "(@details.level + @details.cr)",
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {},
+    "strength": 0,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
     }
   },
   "effects": [],
@@ -70,6 +74,18 @@
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "skaven-items",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null
 }

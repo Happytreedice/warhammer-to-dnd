@@ -6,22 +6,6 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 17,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "dex": {
-        "value": 12,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "con": {
         "value": 16,
         "proficient": 0,
         "bonuses": {
@@ -29,15 +13,23 @@
           "save": ""
         }
       },
-      "int": {
-        "value": 9,
+      "dex": {
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
           "save": ""
         }
       },
-      "wis": {
+      "con": {
+        "value": 18,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
         "value": 10,
         "proficient": 0,
         "bonuses": {
@@ -45,8 +37,16 @@
           "save": ""
         }
       },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
       "cha": {
-        "value": 8,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 15,
         "calc": "flat",
-        "formula": ""
+        "flat": 17,
+        "formula": "",
+        "value": 17
       },
       "hp": {
-        "value": 126,
-        "max": 126,
+        "value": 178,
+        "max": 178,
         "temp": 0,
         "tempmax": 0,
-        "formula": "126"
+        "formula": "178"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
+      "prof": 4,
       "spellcasting": "",
-      "spelldc": 10
+      "spelldc": 16,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Necropolis Knights.</strong> This warrior of Tomb Kings of Khemri enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Dust remembers kings better than flesh ever could.”<br><em>— Settra</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Khopesh, Ancient Spear, Warbow, Chariot Blade, Greatbow, Hooves and Wheels, Lance, Necromantic Undead, Deathless Will, Whirlwind Sweep, Positional Trip. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Necropolis Knights.</strong> A major presence from the Tomb Kings of Khemri, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 17; HP 178; proficiency +4; save DC 16. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 6.0,
+      "cr": 10,
       "xp": {
-        "value": 2700
+        "value": 5900
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "med",
@@ -125,18 +154,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Tomb Kings of Khemri"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Necropolis Knights.</strong> Necropolis Knights enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The dead do not forget who wore the crown.”<br><em>— a priest of Nehekhara</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -163,25 +208,45 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "major",
+      "faction": "Tomb Kings of Khemri",
+      "pf2eBenchmark": {
+        "level": 10,
+        "band": "major-moderate",
+        "mappedToChallengeRating": 10
+      },
       "itemUuids": [
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.JCxsbU7GcC2NABI7",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
         "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.yQzyrGIDqyvAcKVs",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.N1rP6bU6R1hzq6ch",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.IGtffW3GkulATWAO",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.niPxmuLjzL8HHUPD",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ys6yWYvtP3V4Bo77",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ca2kMJoJYd6nlJca",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.87KsnEf2n9knEEUh",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.nWWgdjIjqAf3ApiF"
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YHNdlGbQLDu7FaY8",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.8OvHsvuofW45jt3e",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.G2SnBbbsBjg5vvwN",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MTmQ3GOELGtgyHYr",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.XuCEF5yaPErAauF6",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Z17R2EvEGwYFcoNk",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.F6HHnX0zJbWGr0zv",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.XacgRLBJe0IAmcFi",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo"
       ],
-      "itemCount": 12,
-      "zeroEmbedding": true,
-      "sourceFaction": "khemri"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

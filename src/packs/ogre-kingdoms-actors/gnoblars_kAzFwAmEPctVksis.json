@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 14,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 14,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 12,
         "calc": "flat",
-        "formula": ""
+        "flat": 13,
+        "formula": "",
+        "value": 13
       },
       "hp": {
-        "value": 20,
-        "max": 20,
+        "value": 18,
+        "max": 18,
         "temp": 0,
         "tempmax": 0,
-        "formula": "20"
+        "formula": "18"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
       "prof": 2,
       "spellcasting": "",
-      "spelldc": 9
+      "spelldc": 11,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Gnoblars.</strong> This warrior of Ogre Kingdoms enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The world is a table, and everything on it is meat.”<br><em>— Greasus Goldtooth</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Boulder Throw, Ogre Club, Ironfist, Harpoon Launcher, Massive Projectile / Boulder Throw, Bull Charge, Massive Boulder Throw, Brutish Bulk, Leadership. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Gnoblars.</strong> A minor presence from the Ogre Kingdoms, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 13; HP 18; proficiency +2; save DC 11. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
       "cr": 0.125,
       "xp": {
-        "value": 50
+        "value": 25
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "med",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Ogre Kingdoms"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Gnoblars.</strong> Gnoblars enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“If it fits in the mouth, it fits in the plan.”<br><em>— an Ogre tyrant</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,22 +202,45 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "minor",
+      "faction": "Ogre Kingdoms",
+      "pf2eBenchmark": {
+        "level": 0,
+        "band": "minor-moderate",
+        "mappedToChallengeRating": 0.125
+      },
       "itemUuids": [
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.WFiTfDJto2FfujmK",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.clVKEh0aQiAJxXeb",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.LrDBrx4NwScOnWBA",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.yp6uDvGXk7OzX5q9",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.AHMOaMO9UpNHLUZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.YH6a7jVdl7m6l2nR",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.NkM7zhIoKbVtUCYZ",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.dr3GFpM2XWvMoSnJ",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ho7DflZcOiP6GU1a"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZRW8rV4R7frAgTQe",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.Hae7Y3Gg57QjLLu0",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.3aZA9Z9eu0KiOtBm",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.5Nt6t0LkDDk9CGz1",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.0sJvUzpBtV8bE2hR",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.WV81swFxCnGuvUqt",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.VSGXFgdnZ7wC8DNM",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK"
       ],
-      "itemCount": 9,
-      "zeroEmbedding": true,
-      "sourceFaction": "ogre-kingdoms"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

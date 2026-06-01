@@ -1,44 +1,57 @@
 {
   "_id": "Qi7SkZW7n7d2fEW9",
-  "name": "Tzeentch Chromatic Fire [Хроматический огонь Тзинча]",
+  "name": "Tzeentch Chromatic Fire",
   "type": "spell",
   "img": "icons/magic/unholy/beam-impact-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Tzeentch Chromatic Fire [Хроматический огонь Тзинча].</strong> <em>Recharge 5–6.</em> As an action, the caster releases the spell at a point or target within its listed range. The target resolves the saving throw or attack profile in this item data; on a failed save, it suffers the listed damage and conditions, while a successful save halves damage when the spell allows it. The spell cannot be used again until its recharge is rolled at the start of the caster’s turn.</p><p>The magic rises like a wound in the air, shaped by will and fear. Its power returns only when the winds gather again; until then it leaves the caster listening for the next tremor of sorcery beneath the world.</p><blockquote><p>“Every answer is a feather shed from a greater lie.”<br><em>— a magister of Tzeentch</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Tzeentch Chromatic Fire.</strong> Tzeentch Chromatic Fire tears shape from the Winds of Magic and forces it into a weaponized moment: bright, cold, hungry, or cruel according to the lore that birthed it.</p><p><strong>Mechanics.</strong> Casting uses action at range 120 ft. Targets make INT save against the caster's spell save DC; on a failed save, apply 7d6 fire damage.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World magister</em></p></blockquote>",
+      "chat": "Casting uses action at range 120 ft. Targets make INT save against the caster's spell save DC; on a failed save, apply 7d6 fire damage."
     },
     "source": {
-      "book": "Warhammer: The Old World x D&D 5e",
-      "custom": "Tzeentch Gifts"
+      "custom": "Tzeentch Gifts",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
     },
     "level": 4,
     "school": "evo",
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": "Recharge 5–6"
+      "value": 1,
+      "condition": "Recharge 5-6"
     },
     "duration": {
-      "value": null,
-      "units": "inst"
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-      "value": 1,
-      "width": null,
-      "units": "",
-      "type": "creature"
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "1",
+        "type": "creature",
+        "choice": false,
+        "special": ""
+      }
     },
     "range": {
-      "value": 120,
-      "long": null,
-      "units": "ft"
+      "value": "120",
+      "units": "ft",
+      "special": ""
     },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
       "recovery": [
         {
           "period": "recharge",
@@ -46,15 +59,6 @@
           "formula": "5"
         }
       ]
-    },
-    "consume": {
-      "type": "",
-      "target": "",
-      "amount": null
-    },
-    "preparation": {
-      "mode": "atwill",
-      "prepared": true
     },
     "properties": [
       "vocal",
@@ -66,36 +70,130 @@
       "cost": 0,
       "supply": 0
     },
-    "save": {
-      "ability": "int",
-      "dc": "8 + @prof + @abilities.int.mod",
-      "scaling": "flat"
+    "activities": {
+      "dd44b05bc85ec807": {
+        "_id": "dd44b05bc85ec807",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Recharge 5-6",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "5"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 7,
+              "denomination": 6,
+              "bonus": "(@details.level + @details.cr)",
+              "types": [
+                "fire"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": "int",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "damage": {
-      "parts": [
-        [
-          "7d6 + (@details.level + @details.cr)",
-          "fire"
-        ]
-      ],
-      "versatile": ""
-    },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    },
-    "activities": {},
-    "recharge": {
-      "value": 5,
-      "charged": true
-    },
-    "formula": "(@details.level + @details.cr)"
+    "identifier": "tzeentch-chromatic-fire",
+    "ability": "",
+    "method": "atwill",
+    "prepared": 1,
+    "sourceItem": ""
   },
   "effects": [],
   "sort": 0,
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "old-world-spells",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null
 }

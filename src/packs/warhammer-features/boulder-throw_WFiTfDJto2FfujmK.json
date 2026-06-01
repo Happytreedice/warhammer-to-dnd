@@ -5,75 +5,162 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Boulder Throw.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
-    },
-    "activation": {
-      "type": "special",
-      "cost": null,
-      "condition": ""
-    },
-    "target": {
-      "value": 10,
-      "width": null,
-      "units": "ft",
-      "type": "sphere"
-    },
-    "range": {
-      "value": 120,
-      "long": null,
-      "units": "ft"
+      "value": "<p><strong>Boulder Throw.</strong> Boulder Throw is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": "If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration."
     },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
-      "recovery": "5-6"
-    },
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
-    },
-    "damage": {
-      "parts": [
-        [
-          "8d6",
-          "bludgeoning"
-        ]
-      ],
-      "versatile": ""
-    },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
+      "recovery": [
+        {
+          "period": "recharge",
+          "type": "recoverAll",
+          "formula": "5-6"
+        }
+      ]
     },
     "type": {
       "value": "monster",
       "subtype": ""
     },
-    "properties": [],
-    "ability": "str",
-    "actionType": "save",
-    "formula": "(@details.level + @details.cr)",
+    "properties": [
+      "trait"
+    ],
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
-    }
+    },
+    "identifier": "boulder-throw",
+    "activities": {
+      "cfea33681596957f": {
+        "_id": "cfea33681596957f",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "sphere",
+            "size": "10",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "recoverAll",
+              "formula": "5-6"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "half",
+          "parts": [
+            {
+              "number": 8,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "whole",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "requirements": "",
+    "cover": null,
+    "crewed": false
   },
-  "effects": [
-    {
-      "_id": "PjhtMNowLFzvhtBL",
-      "name": "Prone on Failed Boulder Save",
-      "img": "icons/svg/falling.svg",
-      "changes": [],
-      "disabled": false,
-      "duration": {},
-      "transfer": false
-    }
-  ],
+  "effects": [],
   "ownership": {
     "default": 0
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

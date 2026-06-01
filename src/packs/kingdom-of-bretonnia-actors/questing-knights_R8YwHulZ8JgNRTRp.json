@@ -6,22 +6,6 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 16,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "dex": {
-        "value": 10,
-        "proficient": 0,
-        "bonuses": {
-          "check": "",
-          "save": ""
-        }
-      },
-      "con": {
         "value": 15,
         "proficient": 0,
         "bonuses": {
@@ -29,15 +13,23 @@
           "save": ""
         }
       },
-      "int": {
-        "value": 9,
+      "dex": {
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
           "save": ""
         }
       },
-      "wis": {
+      "con": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
         "value": 10,
         "proficient": 0,
         "bonuses": {
@@ -45,8 +37,16 @@
           "save": ""
         }
       },
+      "wis": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
       "cha": {
-        "value": 8,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 14,
         "calc": "flat",
-        "formula": ""
+        "flat": 16,
+        "formula": "",
+        "value": 16
       },
       "hp": {
-        "value": 90,
-        "max": 90,
+        "value": 146,
+        "max": 146,
         "temp": 0,
         "tempmax": 0,
-        "formula": "90"
+        "formula": "146"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 2,
+      "prof": 3,
       "spellcasting": "",
-      "spelldc": 9
+      "spelldc": 15,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Questing Knights.</strong> This warrior of Kingdom of Bretonnia enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“A knight’s oath is a blade pointed at despair.”<br><em>— Louen Leoncoeur</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Knightly Sword, Lance, Longbow, Hooves and Wheels, Hunting Spear, Knightly Lance, Longsword, Blessing of the Lady, Whirlwind Sweep, Leadership, Positional Trip. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Questing Knights.</strong> A major presence from the Kingdom of Bretonnia, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 16; HP 146; proficiency +3; save DC 15. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 4.0,
+      "cr": 8,
       "xp": {
-        "value": 1800
+        "value": 3900
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "med",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Kingdom of Bretonnia"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Questing Knights.</strong> Questing Knights enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Honour is a lance levelled at fear.”<br><em>— a Bretonnian paladin</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,25 +202,45 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "major",
+      "faction": "Kingdom of Bretonnia",
+      "pf2eBenchmark": {
+        "level": 8,
+        "band": "major-moderate",
+        "mappedToChallengeRating": 8
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YHNdlGbQLDu7FaY8",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.x7qvLB288DWNHScv",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.J1rowdxE1jngF0El",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.hKl2bVkCHsdm0p4k",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.dJ1o2rc2OqgY9UHl",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.88H9ibkooXg5HVsw",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.rIuGnHSuqtMcPMdP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.v7BHjJjPOib298IS",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.fwCNQuOt0GNKya2E",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ys6yWYvtP3V4Bo77",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YkivuT7Jof1CEMMa",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.niPxmuLjzL8HHUPD",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.bRi15coXLDwfPCu1",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Vlucghin4nCBhB1w",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.2RRgafNQsT4SHhFt",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.Ho7DflZcOiP6GU1a",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.nWWgdjIjqAf3ApiF"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo"
       ],
-      "itemCount": 12,
-      "zeroEmbedding": true,
-      "sourceFaction": "kingdom-of-bretonnia"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

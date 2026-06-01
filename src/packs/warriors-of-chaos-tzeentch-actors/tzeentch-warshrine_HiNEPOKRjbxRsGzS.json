@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 14,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -14,7 +14,7 @@
         }
       },
       "dex": {
-        "value": 10,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -30,7 +30,7 @@
         }
       },
       "int": {
-        "value": 9,
+        "value": 17,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 14,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,9 +56,10 @@
     },
     "attributes": {
       "ac": {
-        "flat": 16,
         "calc": "flat",
-        "formula": ""
+        "flat": 17,
+        "formula": "",
+        "value": 17
       },
       "hp": {
         "value": 162,
@@ -69,27 +70,48 @@
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
-      "spellcasting": "",
-      "spelldc": 10
+      "prof": 4,
+      "spellcasting": "int",
+      "spelldc": 19,
+      "spell": {
+        "level": 12
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Tzeentch Warshrine.</strong> This warrior of Warriors of Chaos — Tzeentch enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Change is not a lie; it is the shape truth takes when fools look away.”<br><em>— Kairos Fateweaver</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Ensorcelled Blade, Warpfire Bolt, Mutating Staff, Fated Mutation, Barbed Spear, Sorcerous Staff, Warpfire Blade, Dark Favor, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Tzeentch Warshrine.</strong> A caster presence from the Warriors of Chaos - Tzeentch, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 17; HP 162; proficiency +4; save DC 19. Linked armory entries: 16. Linked spell entries: 5.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 8.0,
+      "cr": 12,
       "xp": {
-        "value": 3600
+        "value": 8400
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "lg",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
-        "custom": "Warriors of Chaos — Tzeentch"
-      }
+        "value": [
+          "abyssal"
+        ],
+        "custom": "Warriors of Chaos - Tzeentch"
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Tzeentch Warshrine.</strong> Tzeentch Warshrine enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“Every answer is a feather shed from a greater lie.”<br><em>— a magister of Tzeentch</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,23 +202,51 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "caster",
+      "faction": "Warriors of Chaos - Tzeentch",
+      "pf2eBenchmark": {
+        "level": 12,
+        "band": "caster-moderate",
+        "mappedToChallengeRating": 12
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.dbfcf4abcc321075",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SAXjiLW5RQ1zgJSY",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.SDYxj675w9IFW8To",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.kM7tNniL587qECWG",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.5QavL3pvGnrc4vI5",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.BDLtxe5DKjthwET4",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.CwYh1wrVjwPLZab8",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.gW2JkP9KJPiuDpYW",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.7nsRKU4ONf2yhpjW",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.DQZlw3iKPrzklqmH",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.5RTtZoHYbRIX1JnF",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.XRoMIHt0Xu1ZCHzV",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.bm9Do8IQSeSfSgaU",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.gKbyWobmKKtQZutI",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.Ux5VcVFbJeN8Yh1l",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FitCMkEG9j1Ar8ha",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo"
       ],
-      "itemCount": 10,
-      "zeroEmbedding": true,
-      "sourceFaction": "warriors-of-chaos-tzeentch"
+      "spellUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.7uxz5ez0pzy9i2zh",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.iOJkN51CqjBuxFBd",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.Ra1YLRnsFtNLZlgC",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.dkEdtBRk3GDUs3gd",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.0Kg0ydxGLWdEQs1a"
+      ]
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

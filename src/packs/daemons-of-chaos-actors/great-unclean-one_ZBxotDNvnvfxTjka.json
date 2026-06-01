@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 20,
+        "value": 19,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -14,7 +14,7 @@
         }
       },
       "dex": {
-        "value": 10,
+        "value": 14,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 20,
+        "value": 21,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -30,7 +30,7 @@
         }
       },
       "int": {
-        "value": 9,
+        "value": 13,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 15,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 14,
+        "value": 20,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 20,
         "calc": "flat",
-        "formula": ""
+        "flat": 23,
+        "formula": "",
+        "value": 23
       },
       "hp": {
-        "value": 325,
-        "max": 325,
+        "value": 932,
+        "max": 932,
         "temp": 0,
         "tempmax": 0,
-        "formula": "325"
+        "formula": "932"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 5,
+      "prof": 8,
       "spellcasting": "",
-      "spelldc": 12
+      "spelldc": 24,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Great Unclean One.</strong> This warrior of Daemons of Chaos enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The veil is thin, and hunger has learned to speak.”<br><em>— Be’lakor</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Daemon Claws, Hellblade, Warpflame Bolt, Ethereal Claws, Warp Talons, Dark Favor, Daemonic Instability, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Great Unclean One.</strong> A solo presence from the Daemons of Chaos, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 23; HP 932; proficiency +8; save DC 24. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 16.0,
+      "cr": 28,
       "xp": {
-        "value": 7200
+        "value": 120000
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "huge",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "abyssal"
+        ],
         "custom": "Daemons of Chaos"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Great Unclean One.</strong> Great Unclean One enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The north wind does not bargain.”<br><em>— a warlord of Chaos</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 3,
+        "spent": 0
+      },
+      "legres": {
+        "max": 2,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,22 +202,45 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "solo",
+      "faction": "Daemons of Chaos",
+      "pf2eBenchmark": {
+        "level": 28,
+        "band": "solo-moderate",
+        "mappedToChallengeRating": 28
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.fee75794a35e05d0",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.r8ptBGjR7wpogQEj",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.PjA18FbkXyWh2guA",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.1OVZwxazaM5solKo",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.L5ETIaTQnQ0QVZz7",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.8QB1v2f003R5V3L7",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.tmELb26TNbugNcbt",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.UVfHTGx7K2Vay8D3",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ZHssN27HnEJDMKkA",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MQt0yDSAPea0cvnD",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.WWgHkZ0WfW0yjkza",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.UGoIVr7NeUMwZnJs",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ugcezLN8U2IAXNZS",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.C5kVzxbRivSet5tb",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK"
       ],
-      "itemCount": 9,
-      "zeroEmbedding": true,
-      "sourceFaction": "daemons-of-chaos"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

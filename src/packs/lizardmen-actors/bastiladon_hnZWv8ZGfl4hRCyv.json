@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 14,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 14,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 16,
         "calc": "flat",
-        "formula": ""
+        "flat": 14,
+        "formula": "",
+        "value": 14
       },
       "hp": {
-        "value": 162,
-        "max": 162,
+        "value": 66,
+        "max": 66,
         "temp": 0,
         "tempmax": 0,
-        "formula": "162"
+        "formula": "66"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
+      "prof": 2,
       "spellcasting": "",
-      "spelldc": 10
+      "spelldc": 13,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Bastiladon.</strong> This warrior of Lizardmen enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“The stars remember the first commandment; the faithful merely obey it.”<br><em>— Lord Kroak</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Celestite Club, Obsidian Spear, Javelin, Cold-Blooded Purpose, Blowpipe, Hunting Spear, Cold-Blooded Discipline, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Bastiladon.</strong> A minor presence from the Lizardmen, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 14; HP 66; proficiency +2; save DC 13. Linked armory entries: 13. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 8.0,
+      "cr": 4,
       "xp": {
-        "value": 3600
+        "value": 1100
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "lg",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "common"
+        ],
         "custom": "Lizardmen"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Bastiladon.</strong> Bastiladon enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“The plan was old before your gods learned to speak.”<br><em>— a Slann mage-priest</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,22 +202,42 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "minor",
+      "faction": "Lizardmen",
+      "pf2eBenchmark": {
+        "level": 4,
+        "band": "minor-moderate",
+        "mappedToChallengeRating": 4
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.56xmOsadIUKMkjfK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.TZ4rUXur8wMBY30m",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.axCQr63h8IxUYTSi",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.Npz6Z9AfUfniDzO8",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.41Zz4Shx6YmoIrdT",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.yBrtmpaDtvOwsKvV",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v3dNkBILm2LrN225",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.BIr6EIHd4Z2RhyMZ",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.v57o5vDODC6oqEGF",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.8rfUG0K7Vbl1JW5F",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.X7m4K7N09LIwUr3S",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.FlVHy7J04kq2MOoK",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.QcgOuvgB8aqcdlgm"
       ],
-      "itemCount": 9,
-      "zeroEmbedding": true,
-      "sourceFaction": "lizardmen"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }

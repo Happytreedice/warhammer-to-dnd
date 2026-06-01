@@ -5,24 +5,20 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>High Elf Realms Talisman.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“A blade is merely a decision made visible.”<br><em>— an Elven lord</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>High Elf Realms Talisman.</strong> High Elf Realms Talisman is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": "If a saving throw is required, use DC 8 + proficiency bonus + the user's best relevant ability modifier. If the feature grants a maneuver, resolve it as the listed activity and apply any active effect only for its stated duration."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
     "rarity": "uncommon",
     "identified": true,
-    "activation": {
-      "type": "special",
-      "cost": null,
-      "condition": ""
-    },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
       "recovery": [
         {
           "period": "recharge",
@@ -31,22 +27,124 @@
         }
       ]
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
+    "identifier": "high-elf-realms-talisman",
+    "activities": {
+      "cc6b5c68875a2f80": {
+        "_id": "cc6b5c68875a2f80",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "5"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "formula": "(@details.level + @details.cr)",
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
-    }
+    "enchant": {},
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
   },
   "effects": [],
   "sort": 0,
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "high-elf-realms-items",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null
 }

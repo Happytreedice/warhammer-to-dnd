@@ -5,60 +5,219 @@
   "img": "icons/weapons/hammers/hammer-war-rounding.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Thrown Boulder.</strong> <em>Massive Projectile:</em> choose a point within 120 feet. Each creature in a 10-foot-radius sphere centered there must make a Dexterity saving throw. On a failed save, a creature takes 21 (6d6) bludgeoning damage and falls prone; on a successful save, it takes half damage and is not knocked prone.</p><p>The weapon carries the habits of its makers: iron darkened by smoke, edges nicked by old wars, and balance tuned for the cruel seconds when a line breaks. It is not an ornament but a battlefield answer, meant to decide distance, courage, and blood before mercy can speak.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Thrown Boulder.</strong> Thrown Boulder is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for martialM; on a hit, deal 8d6 bludgeoning damage. Mastery: sap.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+      "chat": "Attack with the normal ability for martialM; on a hit, deal 8d6 bludgeoning damage. Mastery: sap."
     },
-    "activation": {
-      "type": "action",
-      "cost": 1,
-      "condition": ""
-    },
-    "target": {
-      "value": 10,
-      "width": null,
-      "units": "ft",
-      "type": "sphere"
-    },
-    "range": {
-      "value": 120,
-      "long": null,
-      "units": "ft"
-    },
-    "ability": "str",
-    "actionType": "save",
-    "attackBonus": "",
     "damage": {
-      "parts": [
-        [
-          "8d6",
+      "base": {
+        "number": 8,
+        "denomination": 6,
+        "bonus": "",
+        "types": [
           "bludgeoning"
-        ]
-      ],
-      "versatile": ""
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      },
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "bludgeoning"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      }
     },
     "type": {
-      "value": "martial",
-      "baseItem": ""
+      "value": "martialM",
+      "baseItem": "longsword"
     },
-    "properties": [],
-    "save": {
-      "ability": "dex",
-      "dc": "8 + @prof + @abilities.dex.mod",
-      "scaling": "flat"
-    },
-    "formula": "(@details.level + @details.cr)",
+    "properties": [
+      "ver"
+    ],
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    }
+    "identifier": "thrown-boulder",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "identified": true,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {
+      "2eaa9f283b652891": {
+        "_id": "2eaa9f283b652891",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "120",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "sphere",
+            "size": "10",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "attack",
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 8,
+              "denomination": 6,
+              "bonus": "",
+              "types": [
+                "bludgeoning"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "proficient": null,
+    "magicalBonus": null,
+    "mastery": "sap",
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "cover": null,
+    "crewed": false
   },
   "effects": [],
   "ownership": {
     "default": 0
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

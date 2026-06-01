@@ -5,61 +5,120 @@
   "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Ogre Kingdoms Talisman.</strong> The creature gains the listed battlefield benefit while the conditions in this feature are met. If the feature calls for a saving throw, use the dynamic DC recorded in the item data; if it grants an aura, only chosen allies inside the stated range benefit.</p><p>This discipline is learned in mud, ash, and shouted command. It changes how the warrior occupies the field: where allies stand firmer, enemies hesitate, and a single heartbeat of motion becomes the difference between slaughter and survival.</p><blockquote><p>“If it fits in the mouth, it fits in the plan.”<br><em>— an Ogre tyrant</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Ogre Kingdoms Talisman.</strong> Ogre Kingdoms Talisman carries the hard doctrine of the Ogre Kingdoms: a practical piece of war-gear made to keep its bearer standing when the press of shields turns desperate.</p><p><strong>Mechanics.</strong> While attuned, add +1 to saving throws through a transferable active effect.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World armorer's maxim</em></p></blockquote>",
+      "chat": "While attuned, add +1 to saving throws through a transferable active effect."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
     "quantity": 1,
-    "weight": 0,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
     "price": {
       "value": 0,
       "denomination": "gp"
     },
     "rarity": "rare",
     "identified": true,
-    "attunement": 1,
+    "attunement": "optional",
     "equipped": false,
     "type": {
-      "value": "amulet",
-      "baseItem": "amulet"
+      "value": "wondrous",
+      "baseItem": ""
     },
     "properties": [
       "mgc"
     ],
-    "activation": {
-      "type": "special",
-      "cost": null,
-      "condition": ""
+    "identifier": "ogre-kingdoms-talisman",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
     },
-    "ability": "str",
-    "actionType": "mwak",
-    "damage": {
-      "parts": [
-        [
-          "1d8",
-          "slashing"
-        ]
-      ],
-      "versatile": ""
+    "container": null,
+    "attuned": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
     },
-    "formula": "(@details.level + @details.cr)",
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
+    "activities": {},
+    "armor": {
+      "value": 0,
+      "magicalBonus": null,
+      "dex": null
     },
-    "save": {
-      "ability": "str",
-      "dc": "8 + @prof + @abilities.str.mod",
-      "scaling": "flat"
+    "strength": 0,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
     }
   },
-  "effects": [],
-  "_sourcePack": "ogre-kingdoms-items",
+  "effects": [
+    {
+      "_id": "b67f0995561309f6",
+      "name": "Ogre Kingdoms Talisman: Ward",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.abilities.save",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
   "ownership": {
     "default": 0
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null,
+  "sort": 0
 }

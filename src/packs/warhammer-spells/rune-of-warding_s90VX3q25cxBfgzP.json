@@ -5,40 +5,53 @@
   "img": "icons/magic/unholy/beam-impact-purple.webp",
   "system": {
     "description": {
-      "value": "<p><strong>Защитная руна [Rune of Warding].</strong> <em>Recharge 2–6.</em> As an action, the caster releases the spell at a point or target within its listed range. The target resolves the saving throw or attack profile in this item data; on a failed save, it suffers the listed damage and conditions, while a successful save halves damage when the spell allows it. The spell cannot be used again until its recharge is rolled at the start of the caster’s turn.</p><p>The magic rises like a wound in the air, shaped by will and fear. Its power returns only when the winds gather again; until then it leaves the caster listening for the next tremor of sorcery beneath the world.</p><blockquote><p>“The Old World rewards only those who turn fear into steel.”<br><em>— a scarred captain of the Empire</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+      "value": "<p><strong>Защитная руна [Rune of Warding].</strong> Защитная руна [Rune of Warding] tears shape from the Winds of Magic and forces it into a weaponized moment: bright, cold, hungry, or cruel according to the lore that birthed it.</p><p><strong>Mechanics.</strong> Casting uses action at range self spec. Targets make INT save against the caster's spell save DC; on a failed save, apply its listed activity damage.</p><blockquote><p>\"No shield is stronger than the will behind it.\"<br><em>- Old World magister</em></p></blockquote>",
+      "chat": "Casting uses action at range self spec. Targets make INT save against the caster's spell save DC; on a failed save, apply its listed activity damage."
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
     "level": 1,
-    "school": "abjuration",
+    "school": "abj",
     "activation": {
       "type": "action",
-      "cost": 1,
-      "condition": "Recharge 2–6"
+      "value": 1,
+      "condition": "Recharge 2-6"
     },
     "duration": {
-      "value": null,
-      "units": "inst"
+      "value": "",
+      "units": "inst",
+      "special": ""
     },
     "target": {
-      "value": null,
-      "width": null,
-      "units": "",
-      "type": ""
+      "template": {
+        "count": "",
+        "contiguous": false,
+        "stationary": false,
+        "type": "",
+        "size": "",
+        "width": "",
+        "height": "",
+        "units": "ft"
+      },
+      "affects": {
+        "count": "",
+        "type": "",
+        "choice": false,
+        "special": ""
+      }
     },
     "range": {
-      "value": null,
-      "long": null,
+      "value": "",
       "units": "spec",
       "special": "60 футов"
     },
     "uses": {
-      "value": 1,
+      "spent": 1,
       "max": "1",
-      "per": "recharge",
       "recovery": [
         {
           "period": "recharge",
@@ -46,15 +59,6 @@
           "formula": "2"
         }
       ]
-    },
-    "consume": {
-      "type": "",
-      "target": "",
-      "amount": null
-    },
-    "preparation": {
-      "mode": "atwill",
-      "prepared": true
     },
     "properties": [
       "vocal",
@@ -66,30 +70,151 @@
       "cost": 0,
       "supply": 0
     },
-    "save": {
-      "ability": "int",
-      "dc": "8 + @prof + @abilities.int.mod",
-      "scaling": "flat"
+    "identifier": "rune-of-warding",
+    "activities": {
+      "1532e111d27dfb55": {
+        "_id": "1532e111d27dfb55",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "Recharge 2-6",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": true
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "spec",
+          "special": "60 футов",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "2"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "int",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
     },
-    "damage": {
-      "parts": [],
-      "versatile": ""
-    },
-    "scaling": {
-      "mode": "formula",
-      "formula": "the creature’s war-scaling value"
-    },
-    "recharge": {
-      "value": 2,
-      "charged": true
-    },
-    "formula": "(@details.level + @details.cr)"
+    "ability": "",
+    "method": "atwill",
+    "prepared": 1,
+    "sourceItem": ""
   },
-  "effects": [],
+  "effects": [
+    {
+      "_id": "d9981931bc8898f1",
+      "name": "Защитная руна [Rune of Warding]: Spell Ward",
+      "img": "icons/magic/unholy/beam-impact-purple.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.attributes.ac.bonus",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
   "sort": 0,
   "ownership": {
     "default": 0
   },
-  "_sourcePack": "old-world-spells",
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": null
 }

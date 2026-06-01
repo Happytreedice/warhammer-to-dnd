@@ -6,7 +6,7 @@
   "system": {
     "abilities": {
       "str": {
-        "value": 14,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -22,7 +22,7 @@
         }
       },
       "con": {
-        "value": 14,
+        "value": 12,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -38,7 +38,7 @@
         }
       },
       "wis": {
-        "value": 10,
+        "value": 11,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -46,7 +46,7 @@
         }
       },
       "cha": {
-        "value": 8,
+        "value": 10,
         "proficient": 0,
         "bonuses": {
           "check": "",
@@ -56,40 +56,62 @@
     },
     "attributes": {
       "ac": {
-        "flat": 16,
         "calc": "flat",
-        "formula": ""
+        "flat": 14,
+        "formula": "",
+        "value": 14
       },
       "hp": {
-        "value": 162,
-        "max": 162,
+        "value": 66,
+        "max": 66,
         "temp": 0,
         "tempmax": 0,
-        "formula": "162"
+        "formula": "66"
       },
       "movement": {
         "walk": 30,
-        "fly": 0,
-        "swim": 0,
         "burrow": 0,
         "climb": 0,
+        "fly": 0,
+        "swim": 0,
         "units": "ft",
-        "hover": false
+        "hover": false,
+        "special": ""
       },
-      "prof": 3,
+      "prof": 2,
       "spellcasting": "",
-      "spelldc": 10
+      "spelldc": 13,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
     },
     "details": {
       "biography": {
-        "value": "<p><strong>Great Taurus.</strong> This warrior of Chaos Dwarfs enters the field with a complete D&D 5e profile: armor, hit points, weapons, racial traits, and tactical maneuvers are all resolved directly from the embedded items on this actor. Its battlefield presence is practical rather than ornamental: auras name their radius, diseases name their saving throws, and maneuvers state their action economy.</p><p>Use the inventory as the creature’s tactical menu. Weapons list finished attack or saving throw text; features describe the exact condition, movement, advantage, damage, recharge, or aura they create.</p><blockquote><p>“Ash is the oath, iron is the answer.”<br><em>— Astragoth Ironhand</em></p></blockquote><p><strong>Wargear and battlefield powers.</strong> This creature enters battle with Battlefield Doctrine, Infernal Axe, Blackshard Blunderbuss, Fireglaive, Infernal Industry, Blunderbuss, Obsidian Hammer, Resilience, Dark Favor, Whirlwind Sweep. Its drilled responses, charms, blades, and battlefield rites shape the rhythm of its turns.</p>",
+        "value": "<p><strong>Great Taurus.</strong> A minor presence from the Chaos Dwarfs, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 14; HP 66; proficiency +2; save DC 13. Linked armory entries: 13. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
         "public": ""
       },
-      "cr": 8.0,
+      "cr": 4,
       "xp": {
-        "value": 3600
+        "value": 1100
       },
       "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
         "book": "Warhammer: The Old World x D&D 5e"
       },
       "type": {
@@ -98,7 +120,14 @@
         "swarm": "",
         "custom": ""
       },
-      "alignment": "any non-good alignment"
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
     },
     "traits": {
       "size": "lg",
@@ -119,18 +148,34 @@
         "custom": ""
       },
       "languages": {
-        "value": [],
+        "value": [
+          "dwarvish"
+        ],
         "custom": "Chaos Dwarfs"
-      }
+      },
+      "senses": {},
+      "important": false
     },
     "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
       "book": "Warhammer: The Old World x D&D 5e"
     },
-    "formula": "the creature’s war-scaling value",
-    "description": {
-      "value": "<p><strong>Great Taurus.</strong> Great Taurus enters the field as a finished D&D 5e combatant: armor, weapons, racial disciplines, battlefield powers, and commander auras are represented as embedded Items linked to the shared compendium libraries.</p><p>Its stat line follows a D&D 5e battlefield role, with durability and defensive numbers benchmarked from PF2e creature-building expectations and translated into bounded 5e values.</p><blockquote><p>“A grudge is a stone. Carry it long enough and it becomes a mountain.”<br><em>— a Dwarf thane</em></p></blockquote>",
-      "chat": "",
-      "unidentified": ""
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
     }
   },
   "items": [],
@@ -157,23 +202,42 @@
     "displayName": 20
   },
   "flags": {
-    "warhammerConversions": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "minor",
+      "faction": "Chaos Dwarfs",
+      "pf2eBenchmark": {
+        "level": 4,
+        "band": "minor-moderate",
+        "mappedToChallengeRating": 4
+      },
       "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.56xmOsadIUKMkjfK",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.DnBRKyILbKaTS4eo",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.MHaZ2aBa9dNm9IAz",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.JWR8OV4x4EtSBsIY",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.GrIx1Gwz5xCL5PZN",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.DoBLynzfJYBwj1Mf",
         "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.0bJg8mlDFxAbRKd0",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.xRBmziNZMIbMXiTo",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.VYuJ4bbfCLFoTGeZ",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.KVKKS7zqB6sOe5BZ",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.6220QvkzQT5JxrS1",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.YUrIoXAfihocEOoE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.CcgDVEmDx8sGBsRn",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.DbV1w1GNslP6zEZE",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.IsTkWsITfkG8f8VW"
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.QcgOuvgB8aqcdlgm"
       ],
-      "itemCount": 10,
-      "zeroEmbedding": true,
-      "sourceFaction": "chaos-dwarfs"
+      "spellUuids": []
     }
   },
-  "_stats": {}
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": null
 }
