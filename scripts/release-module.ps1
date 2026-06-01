@@ -12,6 +12,7 @@ param(
 )
 
 $ErrorActionPreference = "Stop"
+$Utf8NoBomStrict = [System.Text.UTF8Encoding]::new($false, $true)
 
 function Resolve-FullPath {
   param([string] $Path)
@@ -40,7 +41,15 @@ function Write-JsonFile {
   )
 
   $json = $Value | ConvertTo-Json -Depth 100
-  [System.IO.File]::WriteAllText($Path, $json + [Environment]::NewLine, [System.Text.UTF8Encoding]::new($false))
+  $json = $json.Replace('\u0026', '&').Replace('\u003c', '<').Replace('\u003e', '>').Replace('\u0027', "'")
+  [System.IO.File]::WriteAllText($Path, $json + [Environment]::NewLine, $script:Utf8NoBomStrict)
+}
+
+function Read-JsonFile {
+  param([string] $Path)
+
+  $json = [System.IO.File]::ReadAllText($Path, $script:Utf8NoBomStrict)
+  return $json | ConvertFrom-Json
 }
 
 function Add-OrSetJsonProperty {
@@ -365,7 +374,7 @@ if (-not (Test-Path $manifestPath -PathType Leaf)) {
   throw "module.json was not found in $moduleRoot"
 }
 
-$manifest = Get-Content -Raw -Path $manifestPath | ConvertFrom-Json
+$manifest = Read-JsonFile -Path $manifestPath
 $repositoryName = Get-GitHubRepository -Manifest $manifest -ModuleRoot $moduleRoot -Remote $RemoteName
 
 if (-not $SkipValidate) {

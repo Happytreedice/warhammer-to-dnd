@@ -1,8 +1,8 @@
 {
     "id": "warhammer-to-dnd",
-    "title": "Warhammer: The Old World to D\u0026D 5e",
-    "description": "Faction compendiums for Warhammer: The Old World converted to D\u0026D 5e 2014 for Foundry VTT v14. Actors are zero-embedding containers with UUID references to atomized shared Item libraries.",
-    "version": "1.0.2",
+    "title": "Warhammer: The Old World to D&D 5e",
+    "description": "Faction compendiums for Warhammer: The Old World converted to D&D 5e 2014 for Foundry VTT v14. Actors are zero-embedding containers with UUID references to atomized shared Item libraries.",
+    "version": "1.0.4",
     "authors": [
         {
             "name": "Happytreedice"
@@ -26,7 +26,7 @@
     "packs": [
         {
             "name": "beastmen-brayherds-actors",
-            "label": "Beastmen Brayherds РІР‚вЂќ Actors",
+            "label": "Beastmen Brayherds — Actors",
             "path": "packs/beastmen-brayherds-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -37,7 +37,7 @@
         },
         {
             "name": "chaos-dwarfs-actors",
-            "label": "Chaos Dwarfs РІР‚вЂќ Actors",
+            "label": "Chaos Dwarfs — Actors",
             "path": "packs/chaos-dwarfs-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -48,7 +48,7 @@
         },
         {
             "name": "daemons-of-chaos-actors",
-            "label": "Daemons of Chaos РІР‚вЂќ Actors",
+            "label": "Daemons of Chaos — Actors",
             "path": "packs/daemons-of-chaos-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -59,7 +59,7 @@
         },
         {
             "name": "dark-elf-actors",
-            "label": "Dark Elf РІР‚вЂќ Actors",
+            "label": "Dark Elf — Actors",
             "path": "packs/dark-elf-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -70,7 +70,7 @@
         },
         {
             "name": "dwarfen-mountain-holds-actors",
-            "label": "Dwarfen Mountain Holds РІР‚вЂќ Actors",
+            "label": "Dwarfen Mountain Holds — Actors",
             "path": "packs/dwarfen-mountain-holds-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -81,7 +81,7 @@
         },
         {
             "name": "empire-of-man-actors",
-            "label": "Empire of Man РІР‚вЂќ Actors",
+            "label": "Empire of Man — Actors",
             "path": "packs/empire-of-man-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -92,7 +92,7 @@
         },
         {
             "name": "high-elf-realms-actors",
-            "label": "High Elf Realms РІР‚вЂќ Actors",
+            "label": "High Elf Realms — Actors",
             "path": "packs/high-elf-realms-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -103,7 +103,7 @@
         },
         {
             "name": "khemri-actors",
-            "label": "Tomb Kings of Khemri РІР‚вЂќ Actors",
+            "label": "Tomb Kings of Khemri — Actors",
             "path": "packs/khemri-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -114,7 +114,7 @@
         },
         {
             "name": "kingdom-of-bretonnia-actors",
-            "label": "Kingdom of Bretonnia РІР‚вЂќ Actors",
+            "label": "Kingdom of Bretonnia — Actors",
             "path": "packs/kingdom-of-bretonnia-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -125,7 +125,7 @@
         },
         {
             "name": "lizardmen-actors",
-            "label": "Lizardmen РІР‚вЂќ Actors",
+            "label": "Lizardmen — Actors",
             "path": "packs/lizardmen-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -136,7 +136,7 @@
         },
         {
             "name": "ogre-kingdoms-actors",
-            "label": "Ogre Kingdoms РІР‚вЂќ Actors",
+            "label": "Ogre Kingdoms — Actors",
             "path": "packs/ogre-kingdoms-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -147,7 +147,7 @@
         },
         {
             "name": "orc-and-goblin-tribes-actors",
-            "label": "Orc \u0026 Goblin Tribes РІР‚вЂќ Actors",
+            "label": "Orc & Goblin Tribes — Actors",
             "path": "packs/orc-and-goblin-tribes-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -158,7 +158,7 @@
         },
         {
             "name": "skaven-actors",
-            "label": "Skaven РІР‚вЂќ Actors",
+            "label": "Skaven — Actors",
             "path": "packs/skaven-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -169,7 +169,7 @@
         },
         {
             "name": "vampire-counts-actors",
-            "label": "Vampire Counts РІР‚вЂќ Actors",
+            "label": "Vampire Counts — Actors",
             "path": "packs/vampire-counts-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -180,7 +180,7 @@
         },
         {
             "name": "vyrkos-dynasty-actors",
-            "label": "Vyrkos Dynasty РІР‚вЂќ Actors",
+            "label": "Vyrkos Dynasty — Actors",
             "path": "packs/vyrkos-dynasty-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -191,7 +191,7 @@
         },
         {
             "name": "warriors-of-chaos-actors",
-            "label": "Warriors of Chaos РІР‚вЂќ Actors",
+            "label": "Warriors of Chaos — Actors",
             "path": "packs/warriors-of-chaos-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -202,7 +202,7 @@
         },
         {
             "name": "warriors-of-chaos-khorne-actors",
-            "label": "Warriors of Chaos РІР‚вЂќ Khorne РІР‚вЂќ Actors",
+            "label": "Warriors of Chaos — Khorne — Actors",
             "path": "packs/warriors-of-chaos-khorne-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -213,7 +213,7 @@
         },
         {
             "name": "warriors-of-chaos-tzeentch-actors",
-            "label": "Warriors of Chaos РІР‚вЂќ Tzeentch РІР‚вЂќ Actors",
+            "label": "Warriors of Chaos — Tzeentch — Actors",
             "path": "packs/warriors-of-chaos-tzeentch-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -224,7 +224,7 @@
         },
         {
             "name": "wood-elf-realms-actors",
-            "label": "Wood Elf Realms РІР‚вЂќ Actors",
+            "label": "Wood Elf Realms — Actors",
             "path": "packs/wood-elf-realms-actors",
             "type": "Actor",
             "system": "dnd5e",
@@ -330,12 +330,12 @@
         },
         {
             "lang": "ru",
-            "name": "Р В РЎС“РЎРѓРЎРѓР С”Р С‘Р в„–",
+            "name": "Русский",
             "path": "lang/ru.json"
         }
     ],
     "name": "warhammer-to-dnd",
     "url": "https://github.com/Happytreedice/warhammer-to-dnd",
     "manifest": "https://github.com/Happytreedice/warhammer-to-dnd/releases/latest/download/module.json",
-    "download": "https://github.com/Happytreedice/warhammer-to-dnd/releases/download/v1.0.2/warhammer-to-dnd.zip"
+    "download": "https://github.com/Happytreedice/warhammer-to-dnd/releases/download/v1.0.4/warhammer-to-dnd.zip"
 }
