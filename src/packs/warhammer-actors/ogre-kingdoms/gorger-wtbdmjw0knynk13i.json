@@ -1,0 +1,246 @@
+{
+  "_id": "WTBDmjw0KnYNk13I",
+  "name": "Gorger",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 9,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 11,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 10,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 13,
+        "formula": "",
+        "value": 13
+      },
+      "hp": {
+        "value": 30,
+        "max": 30,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "30"
+      },
+      "movement": {
+        "walk": 30,
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "units": "ft",
+        "hover": false,
+        "special": ""
+      },
+      "prof": 2,
+      "spellcasting": "",
+      "spelldc": 11,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Gorger.</strong> A minor presence from the Ogre Kingdoms, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 13; HP 30; proficiency +2; save DC 11. Linked armory entries: 16. Linked spell entries: 0.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
+        "public": ""
+      },
+      "cr": 1,
+      "xp": {
+        "value": 200
+      },
+      "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "giant",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
+    },
+    "traits": {
+      "size": "med",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "custom": "Ogre Kingdoms"
+      },
+      "senses": {},
+      "important": false
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "resources": {
+      "legact": {
+        "max": 0,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Gorger",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "minor",
+      "faction": "Ogre Kingdoms",
+      "pf2eBenchmark": {
+        "level": 1,
+        "band": "minor-moderate",
+        "mappedToChallengeRating": 1
+      },
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.ewlVNSmLM6J6DVYR",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZRW8rV4R7frAgTQe",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.Hae7Y3Gg57QjLLu0",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.3aZA9Z9eu0KiOtBm",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.5Nt6t0LkDDk9CGz1",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.0sJvUzpBtV8bE2hR",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.WV81swFxCnGuvUqt",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.VSGXFgdnZ7wC8DNM",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK"
+      ],
+      "spellUuids": []
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": "PgW0LFbtAHl9AkYK"
+}

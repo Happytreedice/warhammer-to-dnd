@@ -1,0 +1,86 @@
+{
+  "_id": "AqdgC6jLQ63V6uEe",
+  "name": "Lizardmen War Plate",
+  "type": "equipment",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Lizardmen War Plate.</strong> Lizardmen War Plate carries the hard doctrine of the Lizardmen: a practical piece of war-gear made to keep its bearer standing when the press of shields turns desperate.</p><p><strong>Mechanics.</strong> While equipped, this item uses the dnd5e 5.3.3 equipment schema and transfers any listed active effects normally.</p><blockquote><p>\"The Old World remembers every oath, especially the broken ones.\"<br><em>- Old World armorer's maxim</em></p></blockquote>",
+      "chat": "While equipped, this item uses the dnd5e 5.3.3 equipment schema and transfers any listed active effects normally."
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "attunement": "required",
+    "equipped": false,
+    "type": {
+      "value": "heavy",
+      "baseItem": "plate"
+    },
+    "properties": [
+      "mgc",
+      "stealthDisadvantage"
+    ],
+    "identifier": "lizardmen-war-plate",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "attuned": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {},
+    "armor": {
+      "value": 18,
+      "magicalBonus": "1",
+      "dex": 0
+    },
+    "strength": 15,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "tyr22JFUJhNGTQr4",
+  "sort": 0
+}

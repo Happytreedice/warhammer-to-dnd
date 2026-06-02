@@ -1,0 +1,136 @@
+{
+  "_id": "DutjYKH2DB1Qz5Ys",
+  "name": "Rune-Forged Oath",
+  "type": "feat",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Rune-Forged Oath.</strong> Rune-Forged Oath is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": ""
+    },
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "identifier": "rune-forged-oath",
+    "activities": {
+      "65509ee38c7eb61a": {
+        "_id": "65509ee38c7eb61a",
+        "sort": 0,
+        "activation": {
+          "type": "special",
+          "value": null,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "str",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "type": {
+      "value": "monster",
+      "subtype": ""
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "rza1tmuBLTqG2hOE"
+}

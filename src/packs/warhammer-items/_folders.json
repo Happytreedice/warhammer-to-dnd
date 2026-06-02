@@ -1,0 +1,182 @@
+[
+  {
+    "name": "Weapons",
+    "type": "Item",
+    "_id": "7CIX3fNN6n1uhBUu",
+    "folder": null,
+    "sorting": "a",
+    "color": "#4f6f52",
+    "flags": {}
+  },
+  {
+    "name": "Features",
+    "type": "Item",
+    "_id": "rza1tmuBLTqG2hOE",
+    "folder": null,
+    "sorting": "a",
+    "color": "#4f6f52",
+    "flags": {}
+  },
+  {
+    "name": "Equipment",
+    "type": "Item",
+    "_id": "jV1ylzJVMGsgef8B",
+    "folder": null,
+    "sorting": "a",
+    "color": "#4f6f52",
+    "flags": {}
+  },
+  {
+    "name": "Spells",
+    "type": "Item",
+    "_id": "22kJrnYsXMtpo6sX",
+    "folder": null,
+    "sorting": "a",
+    "color": "#4f6f52",
+    "flags": {}
+  },
+  {
+    "name": "Lore of High Magic",
+    "type": "Item",
+    "_id": "oXxKdhWJZHBaLeJ2",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#66ffcc",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Dark Magic",
+    "type": "Item",
+    "_id": "HpcRxeJ3QDNxibCF",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#2a0033",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Light",
+    "type": "Item",
+    "_id": "EBOojzUOfOQ9qirW",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#e6e600",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Heavens",
+    "type": "Item",
+    "_id": "Tc68nCNDJJdcqC6v",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#3366cc",
+    "flags": {}
+  },
+  {
+    "name": "Lore of the Wild",
+    "type": "Item",
+    "_id": "YkLimGbMYN7TFOTm",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#593a1c",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Vampires",
+    "type": "Item",
+    "_id": "zpbrwzi8jNu7LJfI",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#3c004d",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Death",
+    "type": "Item",
+    "_id": "x54b6GJriSTBennt",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#330033",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Tzeentch",
+    "type": "Item",
+    "_id": "5UoiDmdd2Lh25Xxq",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#005180",
+    "flags": {}
+  },
+  {
+    "name": "Default Spell",
+    "type": "Item",
+    "_id": "o6C3auvn2juP0cjl",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#4f6f52",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Metal",
+    "type": "Item",
+    "_id": "CJRN2JnVpzn4iB0l",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#a3a375",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Fire",
+    "type": "Item",
+    "_id": "UB0WPvVg4fvzavsu",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#b33000",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Shadows",
+    "type": "Item",
+    "_id": "qgTG2KRUirtYfJ5n",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#1a1a1a",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Plague",
+    "type": "Item",
+    "_id": "GKh7jOuXPgHCWQjk",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#3c4d00",
+    "flags": {}
+  },
+  {
+    "name": "Dwarfen Runes",
+    "type": "Item",
+    "_id": "UFfLVk1GooCYQjAn",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#5a5a7a",
+    "flags": {}
+  },
+  {
+    "name": "Battle Prayers",
+    "type": "Item",
+    "_id": "HLUEdLv7WCDMhqIH",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#99cc00",
+    "flags": {}
+  },
+  {
+    "name": "Lore of Ruin",
+    "type": "Item",
+    "_id": "vqWTfmPa3z9M21v4",
+    "folder": "22kJrnYsXMtpo6sX",
+    "sorting": "a",
+    "color": "#4d3a00",
+    "flags": {}
+  }
+]

@@ -1,0 +1,124 @@
+{
+  "_id": "qyMfubqc0jMQKaGG",
+  "name": "High Elf Realms Talisman",
+  "type": "equipment",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>High Elf Realms Talisman.</strong> High Elf Realms Talisman carries the hard doctrine of the High Elf Realms: a practical piece of war-gear made to keep its bearer standing when the press of shields turns desperate.</p><p><strong>Mechanics.</strong> While attuned, add +1 to saving throws through a transferable active effect.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World armorer's maxim</em></p></blockquote>",
+      "chat": "While attuned, add +1 to saving throws through a transferable active effect."
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "attunement": "optional",
+    "equipped": false,
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "identifier": "high-elf-realms-talisman",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "attuned": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {},
+    "armor": {
+      "value": 0,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": 0,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "2041f9e7465a98be",
+      "name": "High Elf Realms Talisman: Ward",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.abilities.save",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "UtgIlC3NcBQVIVgY",
+  "sort": 0
+}

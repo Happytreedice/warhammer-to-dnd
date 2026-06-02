@@ -1,0 +1,136 @@
+{
+  "_id": "Qmt1DwCc7kcDbpHO",
+  "name": "Tactical Feint",
+  "type": "feat",
+  "img": "icons/skills/social/diplomacy-handshake.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Tactical Feint.</strong> Tactical Feint is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "identifier": "tactical-feint",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "activities": {
+      "4f1ec7db23c6f566": {
+        "_id": "4f1ec7db23c6f566",
+        "sort": 0,
+        "activation": {
+          "type": "bonus",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "self",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "",
+            "type": "",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "save",
+        "damage": {
+          "onSave": "none",
+          "parts": []
+        },
+        "save": {
+          "ability": "cha",
+          "dc": {
+            "calculation": "spellcasting",
+            "formula": ""
+          }
+        }
+      }
+    },
+    "enchant": {},
+    "type": {
+      "value": "class",
+      "subtype": "maneuver"
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "",
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "rza1tmuBLTqG2hOE",
+  "sort": 0
+}

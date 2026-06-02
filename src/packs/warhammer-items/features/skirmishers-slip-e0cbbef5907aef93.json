@@ -1,0 +1,60 @@
+{
+  "_id": "e0cbbef5907aef93",
+  "name": "Skirmisher's Slip",
+  "type": "feat",
+  "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Skirmisher's Slip.</strong> Skirmisher's Slip is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+      "chat": ""
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World"
+    },
+    "identifier": "skirmishers-slip",
+    "activities": {},
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "enchant": {},
+    "type": {
+      "value": "class",
+      "subtype": "maneuver"
+    },
+    "prerequisites": {
+      "items": [],
+      "level": null,
+      "repeatable": false
+    },
+    "properties": [
+      "trait"
+    ],
+    "requirements": "ranger",
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": "rza1tmuBLTqG2hOE",
+  "sort": 0
+}

@@ -1,0 +1,224 @@
+{
+  "_id": "8uBprz6g0ZLNxN1g",
+  "name": "Daemon-forged Cannon",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Daemon-forged Cannon.</strong> Daemon-forged Cannon is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for siege; on a hit, deal 1d8 slashing damage. Mastery: slow.</p><blockquote><p>\"Victory belongs to the hand that does not tremble at dusk.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+      "chat": "Attack with the normal ability for siege; on a hit, deal 1d8 slashing damage. Mastery: slow."
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      },
+      "versatile": {
+        "number": null,
+        "denomination": null,
+        "bonus": "",
+        "types": [],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      }
+    },
+    "type": {
+      "value": "siege",
+      "baseItem": ""
+    },
+    "properties": [
+      "amm",
+      "two"
+    ],
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "identifier": "daemon-forged-cannon",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "identified": true,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {
+      "b43e2b3e27d58a66": {
+        "_id": "b43e2b3e27d58a66",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "80",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "attack",
+        "attack": {
+          "ability": "dex",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "ranged",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "proficient": null,
+    "magicalBonus": null,
+    "mastery": "slow",
+    "ammunition": {
+      "type": "arrow"
+    },
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "7CIX3fNN6n1uhBUu",
+  "sort": 0
+}

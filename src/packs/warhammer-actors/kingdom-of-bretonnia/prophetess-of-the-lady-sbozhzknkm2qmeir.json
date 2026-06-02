@@ -1,0 +1,249 @@
+{
+  "_id": "sBOzHzknkm2QmeiR",
+  "name": "Prophetess of the Lady",
+  "type": "npc",
+  "img": "icons/svg/mystery-man.svg",
+  "system": {
+    "abilities": {
+      "str": {
+        "value": 17,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "dex": {
+        "value": 12,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "con": {
+        "value": 19,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "int": {
+        "value": 11,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "wis": {
+        "value": 13,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      },
+      "cha": {
+        "value": 18,
+        "proficient": 0,
+        "bonuses": {
+          "check": "",
+          "save": ""
+        }
+      }
+    },
+    "attributes": {
+      "ac": {
+        "calc": "flat",
+        "flat": 20,
+        "formula": "",
+        "value": 20
+      },
+      "hp": {
+        "value": 306,
+        "max": 306,
+        "temp": 0,
+        "tempmax": 0,
+        "formula": "306"
+      },
+      "movement": {
+        "walk": 30,
+        "burrow": 0,
+        "climb": 0,
+        "fly": 0,
+        "swim": 0,
+        "units": "ft",
+        "hover": false,
+        "special": ""
+      },
+      "prof": 5,
+      "spellcasting": "",
+      "spelldc": 19,
+      "spell": {
+        "level": 0
+      },
+      "hd": {
+        "spent": 0
+      },
+      "death": {
+        "success": 0,
+        "failure": 0,
+        "bonuses": {
+          "save": ""
+        }
+      },
+      "price": {
+        "value": null,
+        "denomination": "gp"
+      }
+    },
+    "details": {
+      "biography": {
+        "value": "<p><strong>Prophetess of the Lady.</strong> A lord presence from the Kingdom of Bretonnia, built for brutal, legible table play. Its numbers are recalibrated from a PF2e-style creature benchmark and mapped back onto D&D challenge expectations.</p><p><strong>Rules Profile.</strong> AC 20; HP 306; proficiency +5; save DC 19. Linked armory entries: 16. Linked spell entries: 2.</p><blockquote><p>\"A warrior is measured when the line begins to break.\"<br><em>- Old World battlefield saying</em></p></blockquote>",
+        "public": ""
+      },
+      "cr": 16,
+      "xp": {
+        "value": 15000
+      },
+      "source": {
+        "custom": "",
+        "rules": "2024",
+        "license": "Homebrew adaptation",
+        "book": "Warhammer: The Old World x D&D 5e"
+      },
+      "type": {
+        "value": "humanoid",
+        "subtype": "",
+        "swarm": "",
+        "custom": ""
+      },
+      "alignment": "any non-good alignment",
+      "habitat": {
+        "value": [],
+        "custom": ""
+      },
+      "treasure": {
+        "value": []
+      }
+    },
+    "traits": {
+      "size": "lg",
+      "di": {
+        "value": [],
+        "custom": ""
+      },
+      "dr": {
+        "value": [],
+        "custom": ""
+      },
+      "dv": {
+        "value": [],
+        "custom": ""
+      },
+      "ci": {
+        "value": [],
+        "custom": ""
+      },
+      "languages": {
+        "value": [
+          "common"
+        ],
+        "custom": "Kingdom of Bretonnia"
+      },
+      "senses": {},
+      "important": false
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "resources": {
+      "legact": {
+        "max": 3,
+        "spent": 0
+      },
+      "legres": {
+        "max": 0,
+        "spent": 0
+      },
+      "lair": {
+        "value": false,
+        "initiative": 20,
+        "inside": false
+      }
+    }
+  },
+  "items": [],
+  "effects": [],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "prototypeToken": {
+    "texture": {
+      "src": "icons/svg/mystery-man.svg",
+      "scaleX": 1,
+      "scaleY": 1
+    },
+    "width": 1,
+    "height": 1,
+    "name": "Prophetess of the Lady",
+    "disposition": -1,
+    "displayBars": 20,
+    "bar1": {
+      "attribute": "attributes.hp"
+    },
+    "actorLink": false,
+    "displayName": 20
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    },
+    "warhammer-to-dnd": {
+      "role": "lord",
+      "faction": "Kingdom of Bretonnia",
+      "pf2eBenchmark": {
+        "level": 16,
+        "band": "lord-moderate",
+        "mappedToChallengeRating": 16
+      },
+      "itemUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.SAXjiLW5RQ1zgJSY",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.D56pnr5tu9pas2KS",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.x7qvLB288DWNHScv",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.J1rowdxE1jngF0El",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.58hfmfMnyKXkVv4f",
+        "Compendium.warhammer-to-dnd.warhammer-equipment.Item.ZZ73hYJeigpx9pi9",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.hKl2bVkCHsdm0p4k",
+        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.dJ1o2rc2OqgY9UHl",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.88H9ibkooXg5HVsw",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.rIuGnHSuqtMcPMdP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.v7BHjJjPOib298IS",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo",
+        "Compendium.warhammer-to-dnd.warhammer-features.Item.QcgOuvgB8aqcdlgm"
+      ],
+      "spellUuids": [
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.s90VX3q25cxBfgzP",
+        "Compendium.warhammer-to-dnd.warhammer-spells.Item.AI9gq5XU5gv3EOjm"
+      ]
+    }
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "folder": "hT7JohmMbJiAHwwv"
+}

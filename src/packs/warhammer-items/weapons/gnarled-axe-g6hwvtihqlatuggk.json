@@ -1,0 +1,223 @@
+{
+  "_id": "g6HWVtiHQlAtUGgK",
+  "name": "Gnarled Axe",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Gnarled Axe.</strong> Gnarled Axe is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: cleave.</p><blockquote><p>\"No shield is stronger than the will behind it.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+      "chat": "Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: cleave."
+    },
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      },
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      }
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "battleaxe"
+    },
+    "properties": [
+      "ver"
+    ],
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "identifier": "gnarled-axe",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "",
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "identified": true,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {
+      "7466a4c5a9ca55dd": {
+        "_id": "7466a4c5a9ca55dd",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "attack",
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "proficient": null,
+    "magicalBonus": null,
+    "mastery": "cleave",
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "7CIX3fNN6n1uhBUu",
+  "sort": 0
+}

@@ -1,0 +1,275 @@
+{
+  "_id": "HgMqZvAF6CtRxWGk",
+  "name": "Orc & Goblin Tribes Blade",
+  "type": "weapon",
+  "img": "icons/weapons/swords/sword-broad-steel.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Orc &amp; Goblin Tribes Blade.</strong> Orc &amp; Goblin Tribes Blade is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: sap.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+      "chat": "Attack with the normal ability for martialM; on a hit, deal 1d8 slashing damage. Mastery: sap."
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "uses": {
+      "spent": 1,
+      "max": "1",
+      "recovery": [
+        {
+          "period": "recharge",
+          "type": "formula",
+          "formula": "5"
+        }
+      ]
+    },
+    "type": {
+      "value": "martialM",
+      "baseItem": "longsword"
+    },
+    "properties": [
+      "mgc",
+      "ver"
+    ],
+    "damage": {
+      "base": {
+        "number": 1,
+        "denomination": 8,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      },
+      "versatile": {
+        "number": 1,
+        "denomination": 10,
+        "bonus": "",
+        "types": [
+          "slashing"
+        ],
+        "custom": {
+          "enabled": false,
+          "formula": ""
+        },
+        "scaling": {
+          "mode": "",
+          "number": 1,
+          "formula": ""
+        }
+      }
+    },
+    "identifier": "orc-goblin-tribes-blade",
+    "container": null,
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "attunement": "",
+    "attuned": false,
+    "equipped": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {
+      "00b57efe703c3b39": {
+        "_id": "00b57efe703c3b39",
+        "sort": 0,
+        "activation": {
+          "type": "action",
+          "value": 1,
+          "condition": "",
+          "override": false
+        },
+        "consumption": {
+          "targets": [],
+          "scaling": {
+            "allowed": false,
+            "max": ""
+          },
+          "spellSlot": false
+        },
+        "description": {
+          "chatFlavor": ""
+        },
+        "duration": {
+          "value": "",
+          "units": "inst",
+          "special": "",
+          "concentration": false,
+          "override": false
+        },
+        "effects": [],
+        "range": {
+          "value": "",
+          "units": "ft",
+          "special": "",
+          "override": false
+        },
+        "target": {
+          "template": {
+            "count": "",
+            "contiguous": false,
+            "stationary": false,
+            "type": "",
+            "size": "",
+            "width": "",
+            "height": "",
+            "units": "ft"
+          },
+          "affects": {
+            "count": "1",
+            "type": "creature",
+            "choice": false,
+            "special": ""
+          },
+          "prompt": true,
+          "override": false
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "5"
+            }
+          ]
+        },
+        "name": "",
+        "img": "",
+        "appliedEffects": [],
+        "type": "attack",
+        "attack": {
+          "ability": "str",
+          "bonus": "",
+          "critical": {
+            "threshold": null
+          },
+          "flat": false,
+          "type": {
+            "value": "melee",
+            "classification": "weapon"
+          }
+        },
+        "damage": {
+          "critical": {
+            "bonus": ""
+          },
+          "includeBase": true,
+          "parts": [
+            {
+              "number": 1,
+              "denomination": 8,
+              "bonus": "",
+              "types": [
+                "slashing"
+              ],
+              "custom": {
+                "enabled": false,
+                "formula": ""
+              },
+              "scaling": {
+                "mode": "",
+                "number": 1,
+                "formula": ""
+              }
+            }
+          ]
+        }
+      }
+    },
+    "proficient": null,
+    "magicalBonus": null,
+    "mastery": "sap",
+    "ammunition": {},
+    "armor": {
+      "value": null
+    },
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    },
+    "cover": null,
+    "crewed": false
+  },
+  "effects": [
+    {
+      "_id": "0a2ebf0cc56835fd",
+      "name": "Orc & Goblin Tribes Blade: Enchanted Edge",
+      "img": "icons/weapons/swords/sword-broad-steel.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.mwak.damage",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
+  "sort": 0,
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "7CIX3fNN6n1uhBUu"
+}

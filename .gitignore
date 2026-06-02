@@ -21,3 +21,6 @@ yarn-error.log*
 # Local environment
 .env
 .env.*
+/packs/
+/tools/
+__pycache__

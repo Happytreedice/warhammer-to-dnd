@@ -1,0 +1,124 @@
+{
+  "_id": "10LsII2LHfDfqxJM",
+  "name": "Dark Elf Battle Standard",
+  "type": "equipment",
+  "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+  "system": {
+    "description": {
+      "value": "<p><strong>Dark Elf Battle Standard.</strong> Dark Elf Battle Standard carries the hard doctrine of the Dark Elves: a practical piece of war-gear made to keep its bearer standing when the press of shields turns desperate.</p><p><strong>Mechanics.</strong> While carried or displayed by a suitable bearer, add +1 to ability checks through a transferable active effect.</p><blockquote><p>\"Victory belongs to the hand that does not tremble at dusk.\"<br><em>- Old World armorer's maxim</em></p></blockquote>",
+      "chat": "While carried or displayed by a suitable bearer, add +1 to ability checks through a transferable active effect."
+    },
+    "source": {
+      "custom": "",
+      "rules": "2024",
+      "license": "Homebrew adaptation",
+      "book": "Warhammer: The Old World x D&D 5e"
+    },
+    "quantity": 1,
+    "weight": {
+      "value": 0,
+      "units": "lb"
+    },
+    "price": {
+      "value": 0,
+      "denomination": "gp"
+    },
+    "rarity": "rare",
+    "identified": true,
+    "attunement": "optional",
+    "equipped": false,
+    "type": {
+      "value": "wondrous",
+      "baseItem": ""
+    },
+    "properties": [
+      "mgc"
+    ],
+    "identifier": "dark-elf-battle-standard",
+    "uses": {
+      "spent": 0,
+      "max": "",
+      "recovery": []
+    },
+    "container": null,
+    "attuned": false,
+    "unidentified": {
+      "description": "",
+      "name": ""
+    },
+    "activities": {},
+    "armor": {
+      "value": 0,
+      "magicalBonus": null,
+      "dex": null
+    },
+    "strength": 0,
+    "proficient": null,
+    "cover": null,
+    "crewed": false,
+    "hp": {
+      "value": null,
+      "max": null,
+      "dt": null,
+      "conditions": ""
+    }
+  },
+  "effects": [
+    {
+      "_id": "590bb783f6af45e6",
+      "name": "Dark Elf Battle Standard: Battle Standard",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "type": "base",
+      "system": {},
+      "changes": [
+        {
+          "key": "system.bonuses.abilities.check",
+          "mode": 2,
+          "value": "1",
+          "priority": 20
+        }
+      ],
+      "disabled": false,
+      "duration": {
+        "startTime": null,
+        "seconds": null,
+        "rounds": null,
+        "turns": null,
+        "startRound": null,
+        "startTurn": null,
+        "combat": null
+      },
+      "transfer": true,
+      "statuses": [],
+      "flags": {
+        "dnd5e": {},
+        "ATL": {
+          "transfer": true
+        }
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      }
+    }
+  ],
+  "ownership": {
+    "default": 0
+  },
+  "_stats": {
+    "coreVersion": "14",
+    "systemId": "dnd5e",
+    "systemVersion": "5.3.3"
+  },
+  "flags": {
+    "dnd5e": {
+      "riders": {
+        "activity": [],
+        "effect": []
+      }
+    }
+  },
+  "folder": "fxaoQNSoR6SHsJZ6",
+  "sort": 0
+}
