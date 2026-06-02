@@ -184,7 +184,1191 @@
       }
     }
   },
-  "items": [],
+  "items": [
+    {
+      "_id": "MgyiPTF7NJRbdYZJ",
+      "name": "Brutal Feint",
+      "type": "feat",
+      "img": "icons/skills/melee/strike-sword-gray.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Brutal Feint.</strong> Brutal Feint is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"No shield is stronger than the will behind it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World"
+        },
+        "identifier": "brutal-feint",
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "enchant": {},
+        "type": {
+          "value": "class",
+          "subtype": "maneuver"
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "damager",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.5ae7afff175cf239"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "2QJM0wS985Q2siDu",
+      "name": "Skirmisher's Slip",
+      "type": "feat",
+      "img": "icons/skills/movement/feet-winged-boots-brown.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Skirmisher's Slip.</strong> Skirmisher's Slip is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World"
+        },
+        "identifier": "skirmishers-slip",
+        "activities": {},
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "enchant": {},
+        "type": {
+          "value": "class",
+          "subtype": "maneuver"
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "ranger",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.e0cbbef5907aef93"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "oOuQ65CBxTcbdcGL",
+      "name": "Axe of Khorne",
+      "type": "weapon",
+      "img": "icons/weapons/swords/sword-broad-steel.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Axe of Khorne.</strong> Axe of Khorne is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for natural; on a hit, deal 1d8 slashing damage. Mastery: none.</p><blockquote><p>\"Steel is a promise made before fear can speak.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+          "chat": "Attack with the normal ability for natural; on a hit, deal 1d8 slashing damage. Mastery: none."
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "attunement": "",
+        "equipped": true,
+        "rarity": "",
+        "identified": true,
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": 1,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": 1,
+              "formula": ""
+            }
+          }
+        },
+        "properties": [],
+        "proficient": null,
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "identifier": "axe-of-khorne",
+        "container": null,
+        "attuned": false,
+        "unidentified": {
+          "description": "",
+          "name": ""
+        },
+        "activities": {
+          "8ffbdf9b58ac972c": {
+            "_id": "8ffbdf9b58ac972c",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "attack",
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "magicalBonus": null,
+        "mastery": "",
+        "ammunition": {},
+        "armor": {
+          "value": null
+        },
+        "hp": {
+          "value": null,
+          "max": null,
+          "dt": null,
+          "conditions": ""
+        },
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.CP4cXbEVZd8dmPtR"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "LAZkdOGtnUv78Uw2",
+      "name": "Bestial Claws",
+      "type": "weapon",
+      "img": "icons/weapons/swords/sword-broad-steel.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Bestial Claws.</strong> Bestial Claws is a battlefield answer more than an ornament, balanced for the instant when courage, reach, and violence decide who keeps the ground.</p><p><strong>Mechanics.</strong> Attack with the normal ability for natural; on a hit, deal 1d8 slashing damage. Mastery: none.</p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World weaponsmith</em></p></blockquote>",
+          "chat": "Attack with the normal ability for natural; on a hit, deal 1d8 slashing damage. Mastery: none."
+        },
+        "damage": {
+          "base": {
+            "number": 1,
+            "denomination": 8,
+            "bonus": "",
+            "types": [
+              "slashing"
+            ],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": 1,
+              "formula": ""
+            }
+          },
+          "versatile": {
+            "number": null,
+            "denomination": null,
+            "bonus": "",
+            "types": [],
+            "custom": {
+              "enabled": false,
+              "formula": ""
+            },
+            "scaling": {
+              "mode": "",
+              "number": 1,
+              "formula": ""
+            }
+          }
+        },
+        "type": {
+          "value": "natural",
+          "baseItem": ""
+        },
+        "properties": [],
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "identifier": "bestial-claws",
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "container": null,
+        "quantity": 1,
+        "weight": {
+          "value": 0,
+          "units": "lb"
+        },
+        "price": {
+          "value": 0,
+          "denomination": "gp"
+        },
+        "rarity": "",
+        "attunement": "",
+        "attuned": false,
+        "equipped": false,
+        "identified": true,
+        "unidentified": {
+          "description": "",
+          "name": ""
+        },
+        "activities": {
+          "6d6fdd5f582110e4": {
+            "_id": "6d6fdd5f582110e4",
+            "sort": 0,
+            "activation": {
+              "type": "action",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "ft",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "1",
+                "type": "creature",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "attack",
+            "attack": {
+              "ability": "str",
+              "bonus": "",
+              "critical": {
+                "threshold": null
+              },
+              "flat": false,
+              "type": {
+                "value": "melee",
+                "classification": "weapon"
+              }
+            },
+            "damage": {
+              "critical": {
+                "bonus": ""
+              },
+              "includeBase": true,
+              "parts": [
+                {
+                  "number": 1,
+                  "denomination": 8,
+                  "bonus": "",
+                  "types": [
+                    "slashing"
+                  ],
+                  "custom": {
+                    "enabled": false,
+                    "formula": ""
+                  },
+                  "scaling": {
+                    "mode": "",
+                    "number": 1,
+                    "formula": ""
+                  }
+                }
+              ]
+            }
+          }
+        },
+        "proficient": null,
+        "magicalBonus": null,
+        "mastery": "",
+        "ammunition": {},
+        "armor": {
+          "value": null
+        },
+        "hp": {
+          "value": null,
+          "max": null,
+          "dt": null,
+          "conditions": ""
+        },
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.56xmOsadIUKMkjfK"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "YEVoaPOuyMpj5QRU",
+      "name": "Battlefield Doctrine",
+      "type": "feat",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Battlefield Doctrine.</strong> Battlefield Doctrine is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A banner lives only while someone is willing to bleed beneath it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "uses": {
+          "spent": 1,
+          "max": "1",
+          "recovery": [
+            {
+              "period": "recharge",
+              "type": "formula",
+              "formula": "6"
+            }
+          ]
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "identifier": "battlefield-doctrine",
+        "activities": {
+          "68b5973f4927f800": {
+            "_id": "68b5973f4927f800",
+            "sort": 0,
+            "activation": {
+              "type": "bonus",
+              "value": 1,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 1,
+              "max": "1",
+              "recovery": [
+                {
+                  "period": "recharge",
+                  "type": "formula",
+                  "formula": "6"
+                }
+              ]
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "save",
+            "damage": {
+              "onSave": "none",
+              "parts": []
+            },
+            "save": {
+              "ability": "str",
+              "dc": {
+                "calculation": "spellcasting",
+                "formula": ""
+              }
+            }
+          }
+        },
+        "enchant": {},
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.FWe2VKeqjFUxReuP"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "KWuCR9ZXgw1ss6is",
+      "name": "Cold-Blooded Discipline",
+      "type": "feat",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Cold-Blooded Discipline.</strong> Cold-Blooded Discipline is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A spell is courage given a sharper name.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "identifier": "cold-blooded-discipline",
+        "activities": {
+          "2e755fb69480fb80": {
+            "_id": "2e755fb69480fb80",
+            "sort": 0,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "save",
+            "damage": {
+              "onSave": "none",
+              "parts": []
+            },
+            "save": {
+              "ability": "str",
+              "dc": {
+                "calculation": "spellcasting",
+                "formula": ""
+              }
+            }
+          }
+        },
+        "enchant": {},
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [
+        {
+          "_id": "1a9e1fd1b3bfd147",
+          "name": "Cold-Blooded Discipline: Steady Resolve",
+          "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "system.bonuses.abilities.save",
+              "mode": 2,
+              "value": "1",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null,
+            "combat": null
+          },
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "dnd5e": {},
+            "ATL": {
+              "transfer": true
+            }
+          },
+          "_stats": {
+            "coreVersion": "14",
+            "systemId": "dnd5e",
+            "systemVersion": "5.3.3"
+          }
+        }
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.SJJ8sMdsdjtnVKcK"
+        }
+      }
+    },
+    {
+      "_id": "V9GT9a7Dw5g6hUCs",
+      "name": "Dwarfen Resilience",
+      "type": "feat",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Dwarfen Resilience.</strong> Dwarfen Resilience is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"A spell is courage given a sharper name.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "identifier": "dwarfen-resilience",
+        "activities": {
+          "5784a1fc638f09b8": {
+            "_id": "5784a1fc638f09b8",
+            "sort": 0,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "save",
+            "damage": {
+              "onSave": "none",
+              "parts": []
+            },
+            "save": {
+              "ability": "con",
+              "dc": {
+                "calculation": "spellcasting",
+                "formula": ""
+              }
+            }
+          }
+        },
+        "enchant": {},
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [
+        {
+          "_id": "df7b9b9e3be9b9ef",
+          "name": "Dwarfen Resilience: Steady Resolve",
+          "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "system.bonuses.abilities.save",
+              "mode": 2,
+              "value": "1",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null,
+            "combat": null
+          },
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "dnd5e": {},
+            "ATL": {
+              "transfer": true
+            }
+          },
+          "_stats": {
+            "coreVersion": "14",
+            "systemId": "dnd5e",
+            "systemVersion": "5.3.3"
+          }
+        }
+      ],
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.ZHmlo7Fdk7KCnqRo"
+        }
+      },
+      "sort": 0
+    },
+    {
+      "_id": "WNFO4N1B71Gan1nG",
+      "name": "Recharge Discipline",
+      "type": "feat",
+      "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+      "system": {
+        "description": {
+          "value": "<p><strong>Recharge Discipline.</strong> Recharge Discipline is the kind of battlefield habit that survives because it is simple, ruthless, and remembered under pressure.</p><p><strong>Mechanics.</strong> </p><blockquote><p>\"No shield is stronger than the will behind it.\"<br><em>- Old World drillmaster</em></p></blockquote>",
+          "chat": ""
+        },
+        "uses": {
+          "spent": 0,
+          "max": "",
+          "recovery": []
+        },
+        "source": {
+          "custom": "",
+          "rules": "2024",
+          "license": "Homebrew adaptation",
+          "book": "Warhammer: The Old World x D&D 5e"
+        },
+        "identifier": "recharge-discipline",
+        "activities": {
+          "3fcff4418375ff67": {
+            "_id": "3fcff4418375ff67",
+            "sort": 0,
+            "activation": {
+              "type": "special",
+              "value": null,
+              "condition": "",
+              "override": false
+            },
+            "consumption": {
+              "targets": [],
+              "scaling": {
+                "allowed": false,
+                "max": ""
+              },
+              "spellSlot": false
+            },
+            "description": {
+              "chatFlavor": ""
+            },
+            "duration": {
+              "value": "",
+              "units": "inst",
+              "special": "",
+              "concentration": false,
+              "override": false
+            },
+            "effects": [],
+            "range": {
+              "value": "",
+              "units": "self",
+              "special": "",
+              "override": false
+            },
+            "target": {
+              "template": {
+                "count": "",
+                "contiguous": false,
+                "stationary": false,
+                "type": "",
+                "size": "",
+                "width": "",
+                "height": "",
+                "units": "ft"
+              },
+              "affects": {
+                "count": "",
+                "type": "",
+                "choice": false,
+                "special": ""
+              },
+              "prompt": true,
+              "override": false
+            },
+            "uses": {
+              "spent": 0,
+              "max": "",
+              "recovery": []
+            },
+            "name": "",
+            "img": "",
+            "appliedEffects": [],
+            "type": "save",
+            "damage": {
+              "onSave": "none",
+              "parts": []
+            },
+            "save": {
+              "ability": "str",
+              "dc": {
+                "calculation": "spellcasting",
+                "formula": ""
+              }
+            }
+          }
+        },
+        "enchant": {},
+        "type": {
+          "value": "monster",
+          "subtype": ""
+        },
+        "prerequisites": {
+          "items": [],
+          "level": null,
+          "repeatable": false
+        },
+        "properties": [
+          "trait"
+        ],
+        "requirements": "",
+        "cover": null,
+        "crewed": false
+      },
+      "effects": [
+        {
+          "_id": "b996f5341eb22caa",
+          "name": "Recharge Discipline: Steady Resolve",
+          "img": "icons/magic/symbols/rune-sigil-black-pink.webp",
+          "type": "base",
+          "system": {},
+          "changes": [
+            {
+              "key": "system.bonuses.abilities.save",
+              "mode": 2,
+              "value": "1",
+              "priority": 20
+            }
+          ],
+          "disabled": false,
+          "duration": {
+            "startTime": null,
+            "seconds": null,
+            "rounds": null,
+            "turns": null,
+            "startRound": null,
+            "startTurn": null,
+            "combat": null
+          },
+          "transfer": true,
+          "statuses": [],
+          "flags": {
+            "dnd5e": {},
+            "ATL": {
+              "transfer": true
+            }
+          },
+          "_stats": {
+            "coreVersion": "14",
+            "systemId": "dnd5e",
+            "systemVersion": "5.3.3"
+          }
+        }
+      ],
+      "sort": 0,
+      "flags": {
+        "dnd5e": {
+          "riders": {
+            "activity": [],
+            "effect": []
+          }
+        },
+        "core": {
+          "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.QcgOuvgB8aqcdlgm"
+        }
+      }
+    }
+  ],
   "effects": [],
   "sort": 0,
   "ownership": {
@@ -221,23 +1405,7 @@
         "level": 0,
         "band": "minor-moderate",
         "mappedToChallengeRating": 0.125
-      },
-      "itemUuids": [
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.5ae7afff175cf239",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.e0cbbef5907aef93",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.CP4cXbEVZd8dmPtR",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.56xmOsadIUKMkjfK",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.rFlTD8J42i4Vr6dy",
-        "Compendium.warhammer-to-dnd.warhammer-weapons.Item.B3eDrKWcb3WCR2JX",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.VR5Q0zXUpM9uRcpW",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.jSJM78vWGH5SjMSZ",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.5USvZmc1g0iXQTEn",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.FWe2VKeqjFUxReuP",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.SJJ8sMdsdjtnVKcK",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.ZHmlo7Fdk7KCnqRo",
-        "Compendium.warhammer-to-dnd.warhammer-features.Item.QcgOuvgB8aqcdlgm"
-      ],
-      "spellUuids": []
+      }
     }
   },
   "_stats": {
