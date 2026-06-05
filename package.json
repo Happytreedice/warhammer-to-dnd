@@ -9,5 +9,5 @@
     "@foundryvtt/foundryvtt-cli": "latest"
   },
   "name": "warhammer-to-dnd",
-  "version": "1.0.0-zero-embedding"
+  "version": "1.0.8"
 }

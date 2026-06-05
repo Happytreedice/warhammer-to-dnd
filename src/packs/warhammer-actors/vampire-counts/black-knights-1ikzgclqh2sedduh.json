@@ -226,6 +226,9 @@
         "crewed": false
       },
       "effects": [],
+      "ownership": {
+        "default": 0
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -237,6 +240,12 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.5ae7afff175cf239"
         }
       },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
+      "folder": "rza1tmuBLTqG2hOE",
       "sort": 0
     },
     {
@@ -441,6 +450,14 @@
         "crewed": false
       },
       "effects": [],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -452,6 +469,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.ewlVNSmLM6J6DVYR"
         }
       },
+      "folder": "7CIX3fNN6n1uhBUu",
       "sort": 0
     },
     {
@@ -656,6 +674,14 @@
         "crewed": false
       },
       "effects": [],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -667,6 +693,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.gKbyWobmKKtQZutI"
         }
       },
+      "folder": "7CIX3fNN6n1uhBUu",
       "sort": 0
     },
     {
@@ -871,6 +898,14 @@
         "crewed": false
       },
       "effects": [],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -882,6 +917,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.YHNdlGbQLDu7FaY8"
         }
       },
+      "folder": "7CIX3fNN6n1uhBUu",
       "sort": 0
     },
     {
@@ -957,6 +993,14 @@
       },
       "effects": [],
       "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -967,7 +1011,8 @@
         "core": {
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.Mad3f7huQyl9u6np"
         }
-      }
+      },
+      "folder": "HIucZMXiR7n8zaMl"
     },
     {
       "_id": "b4JRMbqEe5XdjmGn",
@@ -1074,6 +1119,14 @@
           }
         }
       ],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1085,6 +1138,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.WlzalV6fY9xzY43T"
         }
       },
+      "folder": "HIucZMXiR7n8zaMl",
       "sort": 0
     },
     {
@@ -1160,6 +1214,14 @@
       },
       "effects": [],
       "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1170,7 +1232,8 @@
         "core": {
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.58hfmfMnyKXkVv4f"
         }
-      }
+      },
+      "folder": "xbYy6wCT1hHWYQKf"
     },
     {
       "_id": "K93LparoFkKBa69H",
@@ -1277,6 +1340,14 @@
           }
         }
       ],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1288,6 +1359,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.ZZ73hYJeigpx9pi9"
         }
       },
+      "folder": "xbYy6wCT1hHWYQKf",
       "sort": 0
     },
     {
@@ -1419,6 +1491,14 @@
         "crewed": false
       },
       "effects": [],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1430,6 +1510,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.FWe2VKeqjFUxReuP"
         }
       },
+      "folder": "rza1tmuBLTqG2hOE",
       "sort": 0
     },
     {
@@ -1589,6 +1670,14 @@
         }
       ],
       "sort": 0,
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1599,7 +1688,8 @@
         "core": {
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.SJJ8sMdsdjtnVKcK"
         }
-      }
+      },
+      "folder": "rza1tmuBLTqG2hOE"
     },
     {
       "_id": "ZtZzEowaULuk9MLe",
@@ -1757,6 +1847,14 @@
           }
         }
       ],
+      "ownership": {
+        "default": 0
+      },
+      "_stats": {
+        "coreVersion": "14",
+        "systemId": "dnd5e",
+        "systemVersion": "5.3.3"
+      },
       "flags": {
         "dnd5e": {
           "riders": {
@@ -1768,6 +1866,7 @@
           "sourceId": "Compendium.warhammer-to-dnd.warhammer-items.Item.ZHmlo7Fdk7KCnqRo"
         }
       },
+      "folder": "rza1tmuBLTqG2hOE",
       "sort": 0
     }
   ],
